@@ -4,7 +4,7 @@ html {
     background-color: #303030;
 }
 .bolum1{
-  display:;
+  display:unset;
 }
 .bolum2{
   display: none;

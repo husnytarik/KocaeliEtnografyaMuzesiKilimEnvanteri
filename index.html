@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
-
 <body>
     <div id="bol1" class="bolum1">
         <div class="head-zone">
@@ -16,13 +16,13 @@
             <p1>Bahçeşehir en iyisi</p1>
         </div>
         <div class="grid-container">
-            <div class="grid-item"><a href="#" onclick="changeDiv(1);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
+            <div class="grid-item"><a href="#" onclick="changeDiv(0);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
               1 Numaralı kilim
               </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(2);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
+          <div class="grid-item"><a href="#" onclick="changeDiv(1);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
               2 Numaralı kilim
               </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(3);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
+          <div class="grid-item"><a href="#" onclick="changeDiv(2);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
               3 Numaralı kilim
               </div></div>
           <div class="grid-item"><a href="#" onclick="changeDiv(4);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
@@ -38,7 +38,7 @@
     </div>
     <div id="bol2" class="bolum2">
         <div class="image-holder">
-            <img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg" style=" width: 100%; height: 100%; object-fit: cover; border-radius: 0 0 20% 0;">
+            <img id="infoImage" src="http://127.0.0.1:5501/mobil/images/recommended4.jpg" style=" width: 100%; height: 100%; object-fit: cover; border-radius: 0 0 20% 0;">
         </div>
     </div>
 </body>
