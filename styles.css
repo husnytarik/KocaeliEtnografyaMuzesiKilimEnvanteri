@@ -1,13 +1,15 @@
 body,
 html {
     width: 100%;
-    background-color: #303030;
+    background-color: #151515;
 }
-.bolum1{
-  display:unset;
+
+.bolum1 {
+    display: unset;
 }
-.bolum2{
-  display: none;
+
+.bolum2 {
+    display: none;
 }
 
 
@@ -43,22 +45,40 @@ p1 {
     align-items: center;
     position: relative;
     text-align: center;
-    
+
 }
+
 .grid-item img {
     width: 100%;
     min-width: 250px;
     object-fit: contain;
 }
+
 /* Bottom left text */
 .bottom-text {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 150%;
-  color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  bottom: 8px;
-  left: 16px;}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
 
-.image-holder{
+.image-holder {
     height: 300px;
+}
+
+h4 {
+    margin: 20px;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px
+}
+
+.divider-line {
+    background: #e3e3e9;
+    width: 99%;
+    height: 1px;
+    margin: 15px 0;
+    display: flex;
 }

@@ -5,16 +5,21 @@ function changeDiv(i) {
     ["https://media.discordapp.net/attachments/1083303057544200272/1116713534156443718/8v2.png?width=1194&height=682",
         "https://media.discordapp.net/attachments/1083303057544200272/1116708462680883271/A3.png?width=1194&height=682",
         "http://127.0.0.1:5501/mobil/images/recommended4.jpg"]
-    var infoList = [
+    var infoHeaderList = [
       "Burada 1. kilim gösteriliyor",
       "Burada 2. kilim gösteriliyor",
       "Burada 3. kilim gösteriliyor"
     ]
+    var infoTextList = [
+      "Test "
+    ]
     if (listPage.style.display = "unset") {
         var image = document.getElementById("infoImage")
+        var header = document.getElementById("infoTextHeader")
+        var text = document.getElementById("infoText")
         infoPage.style.display = "unset"
         listPage.style.display = "none"
         image.src = imgList[i];
-        infoList[i];
+        header.innerHTML = infoHeaderList[i];
     }
 }

@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="bol1" class="bolum1">
-        <div class="head-zone">
-            <h1>Bahçeşehir Kilim</h1>
-            <p1>Bahçeşehir en iyisi</p1>
+      <div class="head-zone">
+        <h1>Bahçeşehir Kilim</h1>
+        <p1>Bahçeşehir en iyisi</p1>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(0);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">1 Numaralı kilim</div>
         </div>
-        <div class="grid-container">
-            <div class="grid-item"><a href="#" onclick="changeDiv(0);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              1 Numaralı kilim
-              </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(1);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              2 Numaralı kilim
-              </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(2);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              3 Numaralı kilim
-              </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(4);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              4 Numaralı kilim
-              </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(5);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              5 Numaralı kilim
-              </div></div>
-          <div class="grid-item"><a href="#" onclick="changeDiv(6);"><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"></a><div class="bottom-text">
-              6 Numaralı Kilim
-              </div></div>          
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(1);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">2 Numaralı kilim</div>
         </div>
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(2);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">3 Numaralı kilim</div>
+        </div>
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(4);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">4 Numaralı kilim</div>
+        </div>
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(5);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">5 Numaralı kilim</div>
+        </div>
+        <div class="grid-item">
+          <a href="#" onclick="changeDiv(6);"
+            ><img src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          /></a>
+          <div class="bottom-text">6 Numaralı Kilim</div>
+        </div>
+      </div>
     </div>
     <div id="bol2" class="bolum2">
-        <div class="image-holder">
-            <img id="infoImage" src="http://127.0.0.1:5501/mobil/images/recommended4.jpg" style=" width: 100%; height: 100%; object-fit: cover; border-radius: 0 0 20% 0;">
-        </div>
+      <div class="image-holder">
+        <img
+          id="infoImage"
+          src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 0 20% 0;
+          "
+        />
+        <h4 id="infoTextHeader">Highest Mountain in the World</h4>
+        <div class="divider-line"></div>
+        <p id="infoText" style="margin: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci itaque
+            autem,
+            vitae
+            fugiat eveniet. Eos consequuntur soluta, consectetur aspernatur, hic iusto aliquid repudiandae
+            veritatis deleniti provident explicabo modi ipsum!</p> <!-- divider space -->
+        <div class="divider-space-text"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
