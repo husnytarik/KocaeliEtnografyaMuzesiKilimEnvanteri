@@ -64,6 +64,7 @@ p1 {
 
 .image-holder {
   height: 300px;
+  width: 99%;
 }
 
 h4 {
@@ -78,8 +79,8 @@ p2 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
-.buttonHolder{
-  position:absolute;
+.buttonHolder {
+  position: absolute;
   bottom: 0;
 }
 
@@ -102,6 +103,12 @@ p2 {
   font-size: 16px;
   font-weight: 400;
 }
-.textHolder{
-  width:97%;
+.textHolder {
+  width: 99%;
+}
+.buttonHolderContainer {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
