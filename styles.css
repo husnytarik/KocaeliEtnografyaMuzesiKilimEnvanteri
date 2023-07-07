@@ -1,0 +1,55 @@
+body,
+html {
+    width: 100%;
+    background-color: #303030;
+}
+
+
+.head-zone {
+    margin: 2%;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+p1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(149, 149, 149);
+}
+
+.grid-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+    height: 300px;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: red;
+    background-color: red;
+    overflow: hidden;
+    /* hide the overflow */
+    align-items: center;
+    position: relative;
+    text-align: center;
+    
+}
+.grid-item img {
+    width: 100%;
+    min-width: 250px;
+    object-fit: contain;
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;}
+
+.image-holder{
+    height: 300px;
+}
