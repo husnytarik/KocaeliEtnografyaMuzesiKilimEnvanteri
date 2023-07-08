@@ -17,9 +17,9 @@ function changeDiv(i) {
     "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
   ];
   var textureList = [
-    "https://media.discordapp.net/attachments/1083303057544200272/1116713534156443718/8v2.png?width=1194&height=682",
-    "https://media.discordapp.net/attachments/1083303057544200272/1116708462680883271/A3.png?width=1194&height=682",
-    "http://127.0.0.1:5501/mobil/images/recommended4.jpg",
+    "https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp1.glb",
+    "https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp2.glb",
+    "https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp3.glb",
   ];
 
   if ((listPage.style.display = "unset")) {
@@ -31,8 +31,9 @@ function changeDiv(i) {
     listPage.style.display = "none";
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
-    modelvw.src = infoTextList[i];
-    
+    text.innerHTML = infoTextList[i];
+    modelvw.src = textureList[i];
+    console.log(modelvw.src)    
   }
 }
 function changeDivBack() {
@@ -41,3 +42,4 @@ function changeDivBack() {
   infoPage.style.display = "none";
   listPage.style.display = "unset";
 }
+

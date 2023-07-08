@@ -92,22 +92,7 @@
       </div>
     </div>
     <div id="bol2" class="bolum2">
-      <div style="display: none">
-        <model-viewer
-          id="kilim"
-          style="width: 100%; height: 100%; z-index: 1000"
-          src="https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp4.glb"
-          ar
-          shadow-intensity="1"
-          camera-controls
-          disable-tap
-          disable-pan
-        >
-          <button slot="ar-button" class="ar-but">
-            <i class="fa-solid fa-eye fa-fade"></i>
-          </button>
-        </model-viewer>
-      </div>
+      <div style="display: none"></div>
       <a href="#" class="back-button" onclick="changeDivBack();">
         <iconify-icon
           icon="ion:chevron-back-outline"
@@ -130,7 +115,19 @@
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
-            <button class="arButtons">Evinde Gör</button>
+            
+            <model-viewer
+              id="kilim"
+              style="width: 100%; height: 100%; z-index: 1000"
+              src="https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp4.glb"
+              ar
+              shadow-intensity="1"
+              camera-controls
+              disable-tap
+              disable-pan
+            >
+              <button class="arButtons" slot="ar-button">Evinde Gör</button>
+            </model-viewer>
             <button class="arButtons">Yerinde Gör</button>
           </div>
         </div>
