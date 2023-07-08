@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
     ></script>
-    <script src="script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Document</title>
   </head>
@@ -92,7 +92,21 @@
       </div>
     </div>
     <div id="bol2" class="bolum2">
-      <div style="display: none"></div>
+      <div style="display: unset">
+        <model-viewer
+          id="kilim"
+          src="https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp4.glb"
+          ar
+          shadow-intensity="1"
+          camera-controls
+          disable-tap
+          disable-pan
+        >
+          <button slot="ar-button" class="ar-but">
+            <i class="fa-solid fa-eye fa-fade"></i>
+          </button>
+        </model-viewer>
+      </div>
       <a href="#" class="back-button" onclick="changeDivBack();">
         <iconify-icon
           icon="ion:chevron-back-outline"
@@ -115,19 +129,7 @@
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
-            
-            <model-viewer
-              id="kilim"
-              style="width: 100%; height: 100%; z-index: 1000"
-              src="https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp4.glb"
-              ar
-              shadow-intensity="1"
-              camera-controls
-              disable-tap
-              disable-pan
-            >
-              <button class="arButtons" slot="ar-button">Evinde Gör</button>
-            </model-viewer>
+            <button class="arButtons">Evinde Gör</button>
             <button class="arButtons">Yerinde Gör</button>
           </div>
         </div>

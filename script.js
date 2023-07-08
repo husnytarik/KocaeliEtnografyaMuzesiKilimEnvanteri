@@ -33,7 +33,7 @@ function changeDiv(i) {
     header.innerHTML = infoHeaderList[i];
     text.innerHTML = infoTextList[i];
     modelvw.src = textureList[i];
-    console.log(modelvw.src)    
+    console.log(modelvw)    
   }
 }
 function changeDivBack() {
