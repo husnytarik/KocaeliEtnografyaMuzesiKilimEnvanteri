@@ -26,3 +26,9 @@ function changeDiv(i) {
         text.innerHTML = infoTextList[i];
     }
 }
+function changeDivBack(){
+  var listPage = document.getElementById("bol1")
+  var infoPage = document.getElementById("bol2")
+  infoPage.style.display = "none"
+  listPage.style.display = "unset"
+}
