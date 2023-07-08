@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -58,6 +59,14 @@
     </div>
     <div id="bol2" class="bolum2">
       <div class="image-holder">
+        <a href="#" onclick="changeDivBack();">
+          <iconify-icon
+            icon="ion:arrow-back-circle-sharp"
+            style="position: absolute; top: 8px; left: 16px; color: white"
+            width="50"
+            height="50"
+          ></iconify-icon
+        ></a>
         <img
           id="infoImage"
           src="http://127.0.0.1:5501/mobil/images/recommended4.jpg"
@@ -68,26 +77,6 @@
             border-radius: 0 0 20% 0;
           "
         />
-
-        <a
-          href="#"
-          style="
-            font-size: 25px;
-            font-weight: 400;
-            position: absolute;
-            margin: 20px;
-            border: none;
-            background-color: #ff5b44;
-            height: 35px;
-            width: 35px;
-            border-radius: 100%;
-            color: white;
-          "
-        >
-          <i class="icon ion-ios-arrow-round-back"></i>
-        </a>
-
-        <a href="#" onclick="changeDivBack();"></a>
         <h4 id="infoTextHeader"></h4>
         <div class="divider-line"></div>
         <div class="textHolder">
