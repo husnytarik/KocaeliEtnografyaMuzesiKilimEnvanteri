@@ -32,18 +32,29 @@ p1 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-item {
+.grid-col1 {
+  height: 250px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: red;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.grid-col2 {
   height: 300px;
   width: 90%;
   margin-bottom: 10px;
   border-radius: 10px;
   border: red;
   overflow: hidden;
-  /* hide the overflow */
   align-items: center;
   position: relative;
   text-align: center;
 }
+
 
 .grid-item img {
   width: 100%;
