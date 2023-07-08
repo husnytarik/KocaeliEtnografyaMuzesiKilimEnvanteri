@@ -92,7 +92,7 @@
       </div>
     </div>
     <div id="bol2" class="bolum2">
-      <div style="display: unset">
+      <div style="display: none">
         <model-viewer
           id="kilim"
           src="https://cdn.glitch.global/40abd77b-70dd-401e-b21f-67d60e76f8de/cp4.glb"
@@ -102,7 +102,7 @@
           disable-tap
           disable-pan
         >
-          <button slot="ar-button" class="ar-but">
+          <button id="arBut" slot="ar-button" class="ar-but">
             <i class="fa-solid fa-eye fa-fade"></i>
           </button>
         </model-viewer>
@@ -129,7 +129,7 @@
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
-            <button class="arButtons">Evinde Gör</button>
+            <button class="arButtons" onclick="runAR()">Evinde Gör</button>
             <button class="arButtons">Yerinde Gör</button>
           </div>
         </div>

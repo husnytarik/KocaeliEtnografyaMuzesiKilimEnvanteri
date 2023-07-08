@@ -43,3 +43,7 @@ function changeDivBack() {
   listPage.style.display = "unset";
 }
 
+function runAR(){
+  var but = document.getElementById("arBut");
+  but.click();
+}
