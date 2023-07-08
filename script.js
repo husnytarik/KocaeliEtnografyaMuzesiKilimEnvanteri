@@ -26,14 +26,12 @@ function changeDiv(i) {
     var image = document.getElementById("infoImage");
     var header = document.getElementById("infoTextHeader");
     var text = document.getElementById("infoText");
-    var modelviewer = document.getElementById("kilim");
-    var material = modelviewer.model.materials[0]
+    var modelvw = document.querySelector("model-viewer#kilim");
     infoPage.style.display = "unset";
     listPage.style.display = "none";
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
-    text.innerHTML = infoTextList[i];
-    material.base.src=textureList[i];
+    modelvw.src = infoTextList[i];
     
   }
 }
