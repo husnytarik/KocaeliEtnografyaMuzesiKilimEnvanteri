@@ -29,7 +29,7 @@ p1 {
 .grid-container {
   padding-top: 10px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-item {
@@ -84,7 +84,7 @@ p2 {
 }
 
 .divider-line {
-  background: #e3e3e9;
+  background: #ff5b44;
   width: 99%;
   height: 1px;
   margin: 15px 0;
