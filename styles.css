@@ -1,7 +1,8 @@
 body,
 html {
-  width: 98%;
+  width: 97%;
   background-color: #151515;
+  overflow: none;
 }
 
 .bolum1 {
@@ -29,12 +30,13 @@ p1 {
 .grid-container {
   padding-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 205px);
+  grid-template-columns: repeat(2, 50%);
+  gap: 3%
 }
 .grid-item {
-  height: 290px;
-  width: 90%;
-  margin-bottom: 80px;
+  height: 200px;
+  width: 88%;
+  margin-bottom: 30%;
   border-radius: 10px;
   border: red;
   overflow: hidden;
@@ -62,6 +64,12 @@ p1 {
   position: absolute;
   bottom: 8px;
   left: 16px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .image-holder {
@@ -88,7 +96,7 @@ p2 {
 
 .divider-line {
   background: #ff5b44;
-  width: 99%;
+  width: 98%;
   height: 1px;
   margin: 15px 0;
   display: flex;
