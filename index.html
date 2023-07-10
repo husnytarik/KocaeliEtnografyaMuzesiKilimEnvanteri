@@ -111,13 +111,17 @@
           <script type="module">
             modelViewer.addEventListener("load", () => {
               const material = modelViewer.model.materials[0];
-              const createAndApplyTexture = async (channel, event) => {
+              const createAndApplyTexture = async (channel, event) => {                
                 const texture = await modelViewer.createTexture(event.target.value);
                 material.pbrMetallicRoughness[channel].setTexture(texture);
+                
               }
               document.querySelector("#texture").addEventListener("click", (event) => {
+                console.log(material.pbrMetallicRoughness[baseColorTexture]);
                 createAndApplyTexture("baseColorTexture", event);
+                
               });
+              
             })
           </script>
         </div>

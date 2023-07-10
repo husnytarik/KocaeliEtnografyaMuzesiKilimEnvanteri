@@ -52,12 +52,15 @@ function changeDivBack() {
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   infoPage.style.display = "none";
-  listPage.style.display = "unset";  
+  listPage.style.display = "unset";
 }
 
 
-setTimeOut(function runAr(val) {
+function runAr() {
   var but = document.getElementById("arBut");
-  but.click();  
-}, 5000);
+  setTimeout(() => {
+    but.click()
+  }, 6000);
+
+}
 
