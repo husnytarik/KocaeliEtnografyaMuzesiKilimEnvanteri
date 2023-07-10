@@ -56,7 +56,7 @@ function changeDivBack() {
 }
 
 
-setTimeout(function runAR() {
+setTimeOut(function runAr(val) {
   var but = document.getElementById("arBut");
   but.click();  
 }, 5000);
