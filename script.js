@@ -1,6 +1,9 @@
+const modelvw = document.querySelector("model-viewer#kilim");
+const model = modelvw.model;
 function changeDiv(i) {
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
+  
   var imgList = [
     "https://media.discordapp.net/attachments/1083303057544200272/1116713534156443718/8v2.png?width=1194&height=682",
     "https://media.discordapp.net/attachments/1083303057544200272/1116708462680883271/A3.png?width=1194&height=682",
@@ -25,15 +28,14 @@ function changeDiv(i) {
   if ((listPage.style.display = "unset")) {
     var image = document.getElementById("infoImage");
     var header = document.getElementById("infoTextHeader");
-    var text = document.getElementById("infoText");
-    var modelvw = document.querySelector("model-viewer#kilim");
+    var text = document.getElementById("infoText");    
     infoPage.style.display = "unset";
     listPage.style.display = "none";
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
     text.innerHTML = infoTextList[i];
-    modelvw.src = textureList[i];
-    console.log(modelvw)    
+    const material = modelvw.model.materials[0];
+    console.log(material)
   }
 }
 function changeDivBack() {
