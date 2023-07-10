@@ -20,6 +20,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 function changeDiv(i) {
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
+  var textureChange = document.getElementById("texture");
   var imgList = [
     "https://media.discordapp.net/attachments/1083303057544200272/1116713534156443718/8v2.png?width=1194&height=682",
     "https://media.discordapp.net/attachments/1083303057544200272/1116708462680883271/A3.png?width=1194&height=682",
@@ -44,7 +45,7 @@ function changeDiv(i) {
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
     text.innerHTML = infoTextList[i];
-
+    textureChange.value = imgList[i];
   }
 }
 function changeDivBack() {
@@ -54,8 +55,9 @@ function changeDivBack() {
   listPage.style.display = "unset";  
 }
 
-function runAR() {
+
+setTimeout(function runAR() {
   var but = document.getElementById("arBut");
-  but.click();
-  
-}
+  but.click();  
+}, 5000);
+
