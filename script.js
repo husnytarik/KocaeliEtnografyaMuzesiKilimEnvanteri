@@ -25,15 +25,13 @@ function changeDiv(i) {
   if ((listPage.style.display = "unset")) {
     var image = document.getElementById("infoImage");
     var header = document.getElementById("infoTextHeader");
-    var text = document.getElementById("infoText");
-    var modelvw = document.querySelector("model-viewer#kilim");
+    var text = document.getElementById("infoText");    
     infoPage.style.display = "unset";
     listPage.style.display = "none";
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
     text.innerHTML = infoTextList[i];
-    modelvw.src = textureList[i];
-    console.log(modelvw)    
+       
   }
 }
 function changeDivBack() {
@@ -43,8 +41,14 @@ function changeDivBack() {
   listPage.style.display = "unset";
 }
 
-function runAR(){
-  var 
+setTimeout(function runAR(){
+  var modelvw = document.querySelector("model-viewer#kilim");
+  modelvw.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/SM_Carpet.glb?v=1689007314768"
+  console.log(modelvw); 
+  var model = modelvw.model;
+  console.log(model);
+  var material = model.materials[0];
+  console.log(material);
   var but = document.getElementById("arBut");
   but.click();
-}
+},5000);
