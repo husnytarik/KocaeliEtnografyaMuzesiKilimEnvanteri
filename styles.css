@@ -346,7 +346,7 @@ model-viewer > #ar-prompt > img {
     transform: rotate(360deg);
   }
 }
-.overlay {
+.overlay {  
   position: fixed;
   top: 0;
   left: 0;
@@ -357,6 +357,6 @@ model-viewer > #ar-prompt > img {
     0,
     0,
     .8
-  ); /* İstediğiniz arka plan rengini ve opaklık seviyesini burada ayarlayabilirsiniz */
-  z-index: 9999; /* Overlay'in diğer içeriklerin üzerinde görünmesini sağlamak için yüksek bir z-index değeri verin */
+  );
+  z-index: 9999;
 }

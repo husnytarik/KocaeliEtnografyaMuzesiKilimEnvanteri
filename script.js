@@ -59,7 +59,9 @@ function changeDivBack() {
 function runAr() {
   var but = document.getElementById("arBut");
   const loadRing = document.getElementById("loadingRing");  
-  const overlay = document.getElementById("overlay");  
+  const overlay = document.getElementById("overlay");
+  const body = document.
+  pointer-events: none;
   overlay.style.display = "unset";    
   loadRing.style.display = "unset";  
   setTimeout(() => {
