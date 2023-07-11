@@ -58,7 +58,10 @@ function changeDivBack() {
 
 function runAr() {
   var but = document.getElementById("arBut");
+  const loadRing = document.getElementById("loadingRing");  
+  loadRing.style.display = "unset";  
   setTimeout(() => {
     but.click()
+    loadRing.style.display = "none";  
   }, 5000);
 }

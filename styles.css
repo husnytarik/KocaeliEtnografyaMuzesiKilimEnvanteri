@@ -312,18 +312,17 @@ model-viewer>#ar-prompt>img {
 .lds-ring {
   display: inline-block;
   position: absolute;
-  bottom: 50&
+  bottom: 10%;
   width: 80px;
   height: 80px;
-  left: 50%;
+  left: 40%;
 }
 .lds-ring div {
   box-sizing: border-box;
   display: block;
   position: absolute;
   width: 64px;
-  height: 64px;
-  
+  height: 64px;  
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
@@ -347,5 +346,11 @@ model-viewer>#ar-prompt>img {
     transform: rotate(360deg);
   }
 }
-
-
+.foreground{
+  position: absolute;
+  background-color: #393939;
+  width: 100px;
+  height: 100px;
+  object-fit: fill;
+  z-index: 8;
+}
