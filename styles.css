@@ -49,11 +49,7 @@ p1 {
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
   -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-  -webkit-box-shadow: inset 100px 100px 100px 100px #000;    
-  -moz-box-shadow: inset 100px 100px 100px 100px #000;
-  box-shadow: inset 100px 10px 10px 10px #0000;
-  
+  -ms-animation: fadeIn 5s;  
 }
 
 .grid-item img {
