@@ -92,6 +92,7 @@
       <model-viewer
         style="display: none"
         id="modelViewer"
+        loading="eager"
         src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/SM_Carpet.glb?v=1689007314768"
         ar
         ar-modes="scene-viewer webxr quick-look"
@@ -105,10 +106,7 @@
         <button id="arBut" slot="ar-button" class="ar-but">
           <i class="fa-solid fa-eye fa-fade"></i>
         </button>
-        <div id="ar-prompt">
-          <img
-            src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          />
+        <div id="ar-prompt">          
         </div>
       </model-viewer>
       <script type="module" src="arScript.js"></script>
@@ -148,8 +146,7 @@
             >
               Evinde Gör
             </button>
-            <button class="arButtons">Yerinde Gör</button>
-                        
+            <button class="arButtons">Yerinde Gör</button>                        
           </div>
         </div>
       </div>
