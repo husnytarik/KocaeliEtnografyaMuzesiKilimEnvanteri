@@ -6,7 +6,7 @@ html {
 }
 
 .bolum1 {
-  display: unset;
+  display: unset;  
 }
 
 .bolum2 {
@@ -75,7 +75,7 @@ p1 {
 
 .image-holder {
   height: 300px;
-  width: 100%;
+  width: 100%;  
 }
 
 .image-holder img {
