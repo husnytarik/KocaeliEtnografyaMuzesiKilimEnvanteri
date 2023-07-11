@@ -60,7 +60,5 @@ function runAr() {
   var but = document.getElementById("arBut");
   setTimeout(() => {
     but.click()
-  }, 6000);
-
+  }, 5000);
 }
-
