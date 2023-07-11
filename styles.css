@@ -309,17 +309,13 @@ model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
 
-.loader {  
-  position: absolute;
-  z-index: 9;
-  left: 42%;
-}
-
 .lds-ring {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  bottom: 50&
   width: 80px;
   height: 80px;
+  left: 50%;
 }
 .lds-ring div {
   box-sizing: border-box;
@@ -327,6 +323,7 @@ model-viewer>#ar-prompt>img {
   position: absolute;
   width: 64px;
   height: 64px;
+  
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
