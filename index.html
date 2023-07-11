@@ -111,6 +111,7 @@
           />
         </div>
       </model-viewer>
+      <script type="module" src="arScript.js"></script>
       <script src="script.js"></script>
       <script
         type="module"
@@ -141,32 +142,14 @@
             <div class="divider-line"></div>
             <button
               id="texture"
-              value="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
+              value=""
               class="arButtons"
               onclick="runAr()"
             >
               Evinde Gör
             </button>
             <button class="arButtons">Yerinde Gör</button>
-            <script type="module">
-              modelViewer.addEventListener("load", () => {
-                const material = modelViewer.model.materials[0];
-                const createAndApplyTexture = async (channel, event) => {
-                  if (event.target.value) {
-                    const texture = await modelViewer.createTexture(
-                      event.target.value
-                    );
-                    material.pbrMetallicRoughness[channel].setTexture(texture);
-                    console.log(material);
-                  }
-                };
-                document
-                  .querySelector("#texture")
-                  .addEventListener("click", (event) => {
-                    createAndApplyTexture("baseColorTexture", event);
-                  });
-              });
-            </script>
+                        
           </div>
         </div>
       </div>

@@ -37,6 +37,8 @@ function changeDiv(i) {
   ];
 
   if ((listPage.style.display = "unset")) {
+    textureChange.value = imgList[i];
+    console.log(textureChange.value)
     var image = document.getElementById("infoImage");
     var header = document.getElementById("infoTextHeader");
     var text = document.getElementById("infoText");
@@ -45,7 +47,7 @@ function changeDiv(i) {
     image.src = imgList[i];
     header.innerHTML = infoHeaderList[i];
     text.innerHTML = infoTextList[i];
-    textureChange.value = imgList[i];
+    
   }
 }
 function changeDivBack() {
