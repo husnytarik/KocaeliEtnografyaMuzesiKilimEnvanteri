@@ -17,6 +17,38 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 //var model = modelvw.model;
 //console.log(model)
 
+
+function divCreator(imgUrl) {
+  var divList = document.getElementsByClassName("grid-item")
+  var divCount = divList.length;
+  console.log(divCount)
+  var gridCol1 = document.querySelector('.grid-col-1');
+  var gridCol2 = document.querySelector('.grid-col-2');
+  var i = divCount+1;
+  var x = 'changeDiv(i)';
+  if (i % 2 === 0) {    
+    var newDiv = document.createElement("div");
+    newDiv.classList.add('grid-item');
+    var count = newDiv.textContent;
+    count = divCount+1;
+    var linkElement = document.createElement('a');
+    linkElement.href = "#"
+    linkElement.setAttribute('onclick', x);
+    var imageElement = document.createElement('img');
+    imageElement.src = imgUrl;
+    linkElement.appendChild(imageElement);
+    gridCol1.appendChild(newDiv);
+    newDiv.appendChild(linkElement);
+  } else {
+    var newDiv = document.createElement("count");
+    newDiv.classList.add('grid-item');
+    newDiv.textContent = divCount+1;
+    gridCol2.appendChild(newDiv);
+  }
+}
+
+
+
 function changeDiv(i) {
   console.log(i)
   var listPage = document.getElementById("bol1");
@@ -70,32 +102,4 @@ function runAr() {
     overlay.style.display = "none";        
     loadRing.style.display = "none";  
   }, 5000);
-}
-
-function divCreator(imgUrl) {
-  var divList = document.getElementsByClassName("grid-item")
-  var divCount = divList.length;
-  console.log(divCount)
-  var gridCol1 = document.querySelector('.grid-col-1');
-  var gridCol2 = document.querySelector('.grid-col-2');
-  var i = divCount+1;
-  if (i % 2 === 0) {    
-    var newDiv = document.createElement("div");
-    newDiv.classList.add('grid-item');
-    var count = newDiv.textContent;
-    count = divCount+1;
-    var linkElement = document.createElement('a');
-    linkElement.href = "#"
-    linkElement.setAttribute('onclick', 'changeDiv()');
-    var imageElement = document.createElement('img');
-    imageElement.src = imgUrl;
-    linkElement.appendChild(imageElement);
-    gridCol1.appendChild(newDiv);
-    newDiv.appendChild(linkElement);
-  } else {
-    var newDiv = document.createElement("count");
-    newDiv.classList.add('grid-item');
-    newDiv.textContent = divCount+1;
-    gridCol2.appendChild(newDiv);
-  }
 }
