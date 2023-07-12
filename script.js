@@ -33,7 +33,7 @@ function divCreator(imgUrl) {
     var linkElement = document.createElement('a');
     linkElement.href = "#"
     linkElement.setAttribute('onclick', 'changeDiv(val)');
-    linkElement.setAttribute('onclick', 'changeDiv("x")');
+    linkElement.setAttribute('onclick', 'changeDiv("i")');
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
