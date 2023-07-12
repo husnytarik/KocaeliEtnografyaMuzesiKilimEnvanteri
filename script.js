@@ -18,6 +18,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 //console.log(model)
 
 function changeDiv(i) {
+  console.log(i)
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   var textureChange = document.getElementById("texture");
@@ -71,7 +72,7 @@ function runAr() {
   }, 5000);
 }
 
-function divCreator() {
+function divCreator(imgUrl) {
   var divList = document.getElementsByClassName("grid-item")
   var divCount = divList.length;
   console.log(divCount)
@@ -81,17 +82,18 @@ function divCreator() {
   if (i % 2 === 0) {    
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
-    newDiv.textContent = divCount+1;
+    var count = newDiv.textContent;
+    const x = divCount.toInt+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('onclick', 'changeDiv(divCount+1)');
+    linkElement.setAttribute('onclick', 'changeDiv(x)');
     var imageElement = document.createElement('img');
-    imageElement.src = 'https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016';
+    imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
     gridCol1.appendChild(newDiv);
     newDiv.appendChild(linkElement);
   } else {
-    var newDiv = document.createElement("div");
+    var newDiv = document.createElement("count");
     newDiv.classList.add('grid-item');
     newDiv.textContent = divCount+1;
     gridCol2.appendChild(newDiv);
