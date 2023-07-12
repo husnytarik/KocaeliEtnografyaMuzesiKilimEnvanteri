@@ -83,10 +83,10 @@ function divCreator(imgUrl) {
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
     var count = newDiv.textContent;
-    const x = divCount.toInt+1;
+    count = divCount+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('onclick', 'changeDiv(x)');
+    linkElement.setAttribute('onclick', 'changeDiv()');
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
