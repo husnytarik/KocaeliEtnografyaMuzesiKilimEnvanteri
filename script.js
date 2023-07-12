@@ -32,15 +32,17 @@ function divCreator(imgUrl) {
     count = divCount+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('val', i)
-    linkElement.setAttribute('onclick', 'changeDiv(val)');
+    linkElement.setAttribute('val', i);
+    var x = linkElement.getAttribute('val');
+    console.log(x);
+    linkElement.setAttribute('onclick', "changeDiv(x)");
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
     gridCol1.appendChild(newDiv);
     newDiv.appendChild(linkElement);
   } else {
-    var newDiv = document.createElement("count");
+    var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
     newDiv.textContent = divCount+1;
     gridCol2.appendChild(newDiv);
