@@ -28,12 +28,10 @@ function divCreator(imgUrl) {
   if (i % 2 === 0) {    
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
-    var count = newDiv.textContent;
-    count = divCount+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('onclick', 'changeDiv(val)');
-    linkElement.setAttribute('onclick', 'changeDiv("i")');
+    linkElement.setAttribute('val', divCount-1);
+    linkElement.setAttribute('onclick', xDiv)
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
@@ -46,8 +44,6 @@ function divCreator(imgUrl) {
     gridCol2.appendChild(newDiv);
   }
 }
-
-
 
 function changeDiv(i) {
   console.log(i)
@@ -83,13 +79,13 @@ function changeDiv(i) {
     
   }
 }
+
 function changeDivBack() {
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   infoPage.style.display = "none";
   listPage.style.display = "unset";
 }
-
 
 function runAr() {
   var but = document.getElementById("arBut");
