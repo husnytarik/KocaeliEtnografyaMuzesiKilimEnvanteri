@@ -18,7 +18,7 @@ document.querySelector('model-viewer').addEventListener('progress', onProgress);
 //console.log(model)
 
 
-function divCreator(imgUrl) {
+function divCreator(imgUrl, name) {
   var divList = document.getElementsByClassName("grid-item")
   var divCount = divList.length;
   console.log(divCount)
@@ -28,20 +28,43 @@ function divCreator(imgUrl) {
   if (i % 2 === 0) {    
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
+    
     var linkElement = document.createElement('a');
     linkElement.href = "#"
     linkElement.setAttribute('val', divCount-1);
-    linkElement.setAttribute('onclick', xDiv)
+    linkElement.setAttribute('onclick', 'changeDiv()')
+    
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
-    linkElement.appendChild(imageElement);
+    
+    var textDiv = document.createElement("div");
+    textDiv.classList.add('bottom-text');
+    textDiv.textContent = name;    
+    
     gridCol1.appendChild(newDiv);
     newDiv.appendChild(linkElement);
+    linkElement.appendChild(imageElement);
+    newDiv.appendChild(textDiv);
   } else {
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
-    newDiv.textContent = divCount+1;
+    
+    var linkElement = document.createElement('a');
+    linkElement.href = "#"
+    linkElement.setAttribute('val', divCount-1);
+    linkElement.setAttribute('onclick', 'changeDiv()')
+    
+    var imageElement = document.createElement('img');
+    imageElement.src = imgUrl;
+    
+    var textDiv = document.createElement("div");
+    textDiv.classList.add('bottom-text');
+    textDiv.textContent = name;    
+    
     gridCol2.appendChild(newDiv);
+    newDiv.appendChild(linkElement);
+    linkElement.appendChild(imageElement);
+    newDiv.appendChild(textDiv);
   }
 }
 
