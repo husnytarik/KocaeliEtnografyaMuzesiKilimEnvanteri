@@ -32,10 +32,8 @@ function divCreator(imgUrl) {
     count = divCount+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('val', i);
-    var x = linkElement.getAttribute('val');
-    console.log(x);
-    linkElement.setAttribute('onclick', "changeDiv(x)");
+    linkElement.setAttribute('onclick', 'changeDiv(val)');
+    linkElement.setAttribute('onclick', 'changeDiv("x")');
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
