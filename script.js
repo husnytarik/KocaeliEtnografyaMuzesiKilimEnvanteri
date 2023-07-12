@@ -78,11 +78,17 @@ function divCreator() {
   var gridCol1 = document.querySelector('.grid-col-1');
   var gridCol2 = document.querySelector('.grid-col-2');
   var i = divCount+1;
-  if (i % 2 === 0) {
+  if (i % 2 === 0) {    
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
     newDiv.textContent = divCount+1;
+    var linkElement = document.createElement('a');
+    linkElement.href = "#"
+    linkElement.setAttribute('onclick', 'changeDiv(divCount+1)');
+    var imageElement = document.createElement('img');
+    imageElement.src = 'resim-url';
     gridCol1.appendChild(newDiv);
+    newDiv.appendChild(linkElement);
   } else {
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
