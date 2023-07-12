@@ -74,19 +74,19 @@ function runAr() {
 function divCreator() {
   var divList = document.getElementsByClassName("grid-item")
   var divCount = divList.length;
-  console.log()
-  var gridCol1 = document.getElementsByClassName("grid-col-1");
-  var gridCol2 = document.getElementsByClassName("grid-col-2");
-  
-  for (var i = 0; i = divCount; i++) {
+  console.log(divCount)
+  var gridCol1 = document.querySelector('.grid-col-1');
+  var gridCol2 = document.querySelector('.grid-col-2');
+  var i = divCount+1;
   if (i % 2 === 0) {
     var newDiv = document.createElement("div");
-    newDiv.textContent = "Yeni Divçift";    
-    newDiv.appendChild(gridCol1);
+    newDiv.classList.add('grid-item');
+    newDiv.textContent = divCount+1;
+    gridCol1.appendChild(newDiv);
   } else {
     var newDiv = document.createElement("div");
-    newDiv.textContent = "Yeni Divtek";
-    newDiv.appendChild(gridCol2);
+    newDiv.classList.add('grid-item');
+    newDiv.textContent = divCount+1;
+    gridCol2.appendChild(newDiv);
   }
-}
 }
