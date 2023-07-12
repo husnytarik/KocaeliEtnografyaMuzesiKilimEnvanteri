@@ -25,7 +25,6 @@ function divCreator(imgUrl) {
   var gridCol1 = document.querySelector('.grid-col-1');
   var gridCol2 = document.querySelector('.grid-col-2');
   var i = divCount+1;
-  var x = 'changeDiv(i)';
   if (i % 2 === 0) {    
     var newDiv = document.createElement("div");
     newDiv.classList.add('grid-item');
@@ -33,7 +32,8 @@ function divCreator(imgUrl) {
     count = divCount+1;
     var linkElement = document.createElement('a');
     linkElement.href = "#"
-    linkElement.setAttribute('onclick', x);
+    linkElement.setAttribute('val', i)
+    linkElement.setAttribute('onclick', 'changeDiv(val)');
     var imageElement = document.createElement('img');
     imageElement.src = imgUrl;
     linkElement.appendChild(imageElement);
