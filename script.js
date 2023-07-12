@@ -86,7 +86,8 @@ function divCreator() {
     linkElement.href = "#"
     linkElement.setAttribute('onclick', 'changeDiv(divCount+1)');
     var imageElement = document.createElement('img');
-    imageElement.src = 'resim-url';
+    imageElement.src = 'https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016';
+    linkElement.appendChild(imageElement);
     gridCol1.appendChild(newDiv);
     newDiv.appendChild(linkElement);
   } else {
