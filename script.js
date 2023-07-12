@@ -72,20 +72,21 @@ function runAr() {
 }
 
 function divCreator() {
-  var divList = document.getElementById("getElementsByClassName")
+  var divList = document.getElementsByClassName("grid-item")
   var divCount = divList.length;
-  var gridCol1 = document.getElementById("grid-col-1");
-  var gridCol2 = document.getElementById("grid-col-2");
+  console.log()
+  var gridCol1 = document.getElementsByClassName("grid-col-1");
+  var gridCol2 = document.getElementsByClassName("grid-col-2");
   
-  for (var i = 0; i < divCount; i++) {
+  for (var i = 0; i = divCount; i++) {
   if (i % 2 === 0) {
     var newDiv = document.createElement("div");
     newDiv.textContent = "Yeni Divçift";    
-    divList.appendChild(gridCol1);
+    newDiv.appendChild(gridCol1);
   } else {
     var newDiv = document.createElement("div");
     newDiv.textContent = "Yeni Divtek";
-    divList.appendChild(gridCol2);
+    newDiv.appendChild(gridCol2);
   }
 }
 }
