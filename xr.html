@@ -106,15 +106,15 @@
       <button class="audioButtonsEn" onclick="playAudioEn(7)">EN</button>
       <button class="audioButtonsTr" onclick="playAudioTr(7)">TR</button>
     </div>
-    <a-scene vr-mode-ui="enabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
-        embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
+    
+    <a-scene>
       <a-nft
         id="nft1"
         type="nft"
         url="https://cdn.glitch.global/673e623e-6ba8-420a-9939-44e3004060c2/1"
         nftselector
         smooth="false"
+        emitevents
         preload="true"
       >
       </a-nft>
@@ -124,6 +124,7 @@
         url="https://cdn.glitch.global/241e252c-0e20-41bb-bda1-3c4b4cc8b9b1/2"
         nftselector
         smooth="false"
+        emitevents
         smoothcount="0"
         preload="true"
       >
@@ -135,6 +136,7 @@
         nftselector
         smooth="false"
         smoothcount="0"
+        emitevents
         preload="true"
       >
       </a-nft>
@@ -145,6 +147,7 @@
         nftselector
         smooth="false"
         smoothcount="0"
+        emitevents
         preload="true"
       >
       </a-nft>
@@ -155,6 +158,7 @@
         nftselector
         smooth="false"
         smoothcount="0"
+        emitevents
         preload="true"
       >
       </a-nft>
@@ -165,10 +169,12 @@
         nftselector
         smooth="false"
         smoothcount="0"
+        emitevents
         preload="true"
       >
       </a-nft>
       <a-nft
+        emitevents
         id="nft7"
         type="nft"
         url="https://cdn.glitch.global/3e765742-6c58-4bbf-b694-9256d2324175/7"
@@ -178,6 +184,7 @@
         preload="true"
       >
       </a-nft>
-    </a-scene>
+    </a-scene> 
+    
   </body>
 </html>
