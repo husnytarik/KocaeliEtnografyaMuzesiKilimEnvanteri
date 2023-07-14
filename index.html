@@ -8,7 +8,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Document</title>
   </head>
-  <body>    
+  <body>
     <div id="bol1" class="bolum1">
       <div class="head-zone">
         <h1>Bahçeşehir Kilim</h1>
@@ -20,9 +20,35 @@
           <div class="grid-item" style="height: 180px">
             <a href="#" onclick="changeDiv(0);"
               ><img
-                src="https://i.pinimg.com/564x/c6/d8/fd/c6d8fd3ae3b610a6e77369a3bc374f19.jpg"
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/1.jpg"
               />
               <div class="bottom-text">1 Numaralı kilim</div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" onclick="changeDiv(2);"
+              ><img
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/3.jpg"
+              />
+              <div class="bottom-text">3 Numaralı kilim</div>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a href="#" onclick="changeDiv(4);"
+              ><img
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/5.jpg"
+              />
+              <div class="bottom-text">5 Numaralı kilim</div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="#" onclick="changeDiv(6);"
+              ><img
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/6.jpg"
+              />
+              <div class="bottom-text">7 Numaralı kilim</div>
             </a>
           </div>
         </div>
@@ -30,9 +56,25 @@
           <div class="grid-item">
             <a href="#" onclick="changeDiv(1);"
               ><img
-                src="https://i.pinimg.com/564x/c6/d8/fd/c6d8fd3ae3b610a6e77369a3bc374f19.jpg"
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/2.jpg"
               />
-              <div class="bottom-text">1 Numaralı kilim</div>
+              <div class="bottom-text">2 Numaralı kilim</div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="#" onclick="changeDiv(3);"
+              ><img
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/4.jpg"
+              />
+              <div class="bottom-text">4 Numaralı kilim</div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="#" onclick="changeDiv(5);"
+              ><img
+                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/6.jpg"
+              />
+              <div class="bottom-text">6 Numaralı kilim</div>
             </a>
           </div>
         </div>
@@ -56,8 +98,7 @@
         <button id="arBut" slot="ar-button" class="ar-but">
           <i class="fa-solid fa-eye fa-fade"></i>
         </button>
-        <div id="ar-prompt">          
-        </div>
+        <div id="ar-prompt"></div>
       </model-viewer>
       <script type="module" src="arScript.js"></script>
       <script src="script.js"></script>
@@ -88,26 +129,21 @@
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
-            <button
-              id="texture"
-              value=""
-              class="arButtons"
-              onclick="runAr()"
-            >
+            <button id="texture" value="" class="arButtons" onclick="runAr()">
               Evinde Gör
             </button>
-            <button class="arButtons">Yerinde Gör</button>                        
+            <button class="arButtons">Yerinde Gör</button>
           </div>
         </div>
       </div>
     </div>
     <div id="overlay" style="display: none" class="overlay">
-    <div id="loadingRing" style="display: none" class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+      <div id="loadingRing" style="display: none" class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+    </div>
   </body>
 </html>
