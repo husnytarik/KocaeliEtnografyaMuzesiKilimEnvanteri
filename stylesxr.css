@@ -1,125 +1,143 @@
 body {
-    margin: 0px;
-    overflow: hidden;
+  margin: 0px;
+  overflow: hidden;
 }
 
 .arjs-loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
 }
 
 .top {
-    color: beige;
-    border-radius: 10px;
-    font: 14px sans-serif;
-    overflow-y: scroll;
-    text-align: center;
-    z-index: 1000;
-    width: 90%;
-    height: 20%;
-    min-height: 50px;
-    position: fixed;
-    top: 1%;
-    left: 5%;
+  color: beige;
+  border-radius: 10px;
+  font: 14px sans-serif;
+  overflow-y: scroll;
+  text-align: center;
+  z-index: 1000;
+  width: 90%;
+  height: 20%;
+  min-height: 50px;
+  position: fixed;
+  top: 1%;
+  left: 5%;
 }
 
 .bottom {
-    color: beige;
-    border-radius: 10px;
-    font: 14px sans-serif;
-    overflow-y: scroll;
-    text-align: center;
-    z-index: 1001;
-    width: 70%;
-    height: 5%;
-    min-height: 200px;
-    position: fixed;
-    bottom: 15%;
-    left: 15%;
+  color: beige;
+  border-radius: 10px;
+  font: 14px sans-serif;
+  overflow-y: scroll;
+  text-align: center;
+  z-index: 1001;
+  width: 70%;
+  height: 5%;
+  min-height: 200px;
+  position: fixed;
+  bottom: 15%;
+  left: 15%;
 }
 
 .voices1 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices2 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices3 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices4 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices5 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices6 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .voices7 {
-    z-index: 1001;
-    width: 100%;
-    bottom: 0%;
+  z-index: 1001;
+  width: 100%;
+  bottom: 0%;
 }
 
 .audioButtonsEn {
-    position: fixed;
-    bottom: 3%;
-    right: 51%;
-    border-radius: 100px;
-    min-width: 50px;
-    min-height: 50px;
-    z-index: 2000;
-    background-color: #ff5b44;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+  position: fixed;
+  bottom: 3%;
+  right: 51%;
+  border-radius: 100px;
+  border: none;
+  min-width: 50px;
+  min-height: 50px;
+  z-index: 2000;
+  background-color: #ff5b44;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .audioButtonsTr {
-    position: fixed;
-    bottom: 3%;
-    left: 51%;
-    border-radius: 100px;
-    min-width: 50px;
-    min-height: 50px;
-    z-index: 2000;
-    background-color: #ff5b44;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+  position: fixed;
+  bottom: 3%;
+  left: 51%;
+  border-radius: 100px;
+  border: none;  
+  min-width: 50px;
+  min-height: 50px;
+  z-index: 2000;
+  background-color: #ff5b44;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.backBut {
+  position: absolute;
+  border-radius: 100px;
+  border: none;
+  min-width: 40px;
+  min-height:40px;
+  left:7%;
+  top:5%;
+  z-index: 3000;
+  background-color: #ff5b44;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;  
+  
 }
