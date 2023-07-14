@@ -1,3 +1,9 @@
+window.addEventListener("arjs-nft-loaded", (event) => {
+  
+});
+
+
+
 const topArea = document.getElementsByClassName("top");
 const bottomArea = document.getElementsByClassName("bottom");
 const header = document.getElementById("Header");
