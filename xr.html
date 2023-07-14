@@ -106,7 +106,9 @@
       <button class="audioButtonsEn" onclick="playAudioEn(7)">EN</button>
       <button class="audioButtonsTr" onclick="playAudioTr(7)">TR</button>
     </div>
-    <a-scene>
+    <a-scene vr-mode-ui="enabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+        embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
       <a-nft
         id="nft1"
         type="nft"
