@@ -3,16 +3,16 @@
 // To achieve this effect we're creating a copy of the image and scaling it up. Next we'll pull the x and y coordinates of the mouse on the original image. Then we translate the big image so that the points we are looking at match up. Finally we create a mask to display the piece of the image that we're interested in.
 
 // So let's dive into it...
-var image = document.getElementById("infoImage");
+
 let settings = {
   'magnification':10,
-  'maskSize': 200
+  'maskSize': 300
 }
 
 // Once our images have loaded let's create the zoom
 window.addEventListener("load",()=>{
   // find all the images
-  let images = document.getElementById("infoImage");
+  let images = document.querySelectorAll('.image-zoom-available');
   // querySelectorAll produces an array of images that we pull out one by one and create a Zoombini for
   Array.prototype.forEach.call(images,(image)=>{
     new Zoombini(image);
