@@ -19,9 +19,11 @@ html {
 
 .image-zoom-available{
   cursor: zoom-in;
+  overflow: none;
 }
 .image-zoom-available.is-active{
   cursor: none;
+  overflow: none;
 }
 
 h1 {

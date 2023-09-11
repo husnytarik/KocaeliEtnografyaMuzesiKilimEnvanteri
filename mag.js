@@ -5,12 +5,12 @@
 // So let's dive into it...
 
 let settings = {
-  'magnification':10,
-  'maskSize': 300
+  'magnification':3,
+  'maskSize': 200
 }
 
 // Once our images have loaded let's create the zoom
-window.addEventListener("load",()=>{
+window.addEventListener("click",()=>{
   // find all the images
   let images = document.querySelectorAll('.image-zoom-available');
   // querySelectorAll produces an array of images that we pull out one by one and create a Zoombini for
