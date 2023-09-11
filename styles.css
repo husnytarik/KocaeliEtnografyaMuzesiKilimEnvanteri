@@ -17,6 +17,13 @@ html {
   margin: 2%;
 }
 
+.image-zoom-available{
+  cursor: zoom-in;
+}
+.image-zoom-available.is-active{
+  cursor: none;
+}
+
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
@@ -77,7 +84,8 @@ p1 {
 
 .image-holder {
   height: 300px;
-  width: 100%;  
+  width: 100%;
+  
 }
 
 .image-holder img {

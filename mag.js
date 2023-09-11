@@ -6,13 +6,13 @@
 var image = document.getElementById("infoImage");
 let settings = {
   'magnification':10,
-  'maskSize': 300
+  'maskSize': 200
 }
 
 // Once our images have loaded let's create the zoom
 window.addEventListener("load",()=>{
   // find all the images
-  let images = document.querySelectorAll('.image-zoom-available');
+  let images = document.getElementById("infoImage");
   // querySelectorAll produces an array of images that we pull out one by one and create a Zoombini for
   Array.prototype.forEach.call(images,(image)=>{
     new Zoombini(image);
