@@ -1,4 +1,6 @@
 // Handles loading the events for <model-viewer>'s slotted progress bar
+const image = document.getElementById("infoImage");
+
 const onProgress = (event) => {
   const progressBar = event.target.querySelector('.progress-bar');
   const updatingBar = event.target.querySelector('.update-bar');
@@ -31,11 +33,10 @@ var kilimList = [
 {src: "9.jpg", isim: "Yastık Yüzü",  envanterNo: "832", teknik: "Cicim (Seyrek Motifli)",  malzeme: "Yün (Çözgü)-Yün(Atkı)", ebatları: "46x99cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
 {src: "10.jpg", isim: "Yastık Kılıfı",  envanterNo: "368", teknik: "Zili",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "24x75cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
   ]
- 
 
   if ((listPage.style.display = "unset")) {
+    textureChange.value = kilimList[i];
     console.log("texturevalue", textureChange.value)
-    var image = document.getElementById("infoImage");
     var isim = document.getElementById("isim");
     var envanter = document.getElementById("envanter");
     var teknik = document.getElementById("teknik");
@@ -46,7 +47,6 @@ var kilimList = [
     infoPage.style.display = "unset";
     listPage.style.display = "none";
     image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i].src;
-    textureChange.value = image;    
     console.log(image.src);
     isim.innerHTML = kilimList[i].isim;
     isim.style.fontWeight = "bold";
