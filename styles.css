@@ -137,10 +137,11 @@ p2 {
 }
 
 .textHolder {
+  margin-left: 3%;
   width: 99%;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 .maddeler{
   font-weight: thin;
