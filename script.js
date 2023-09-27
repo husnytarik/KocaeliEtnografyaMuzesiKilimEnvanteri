@@ -1,4 +1,5 @@
 // Handles loading the events for <model-viewer>'s slotted progress bar
+
 const onProgress = (event) => {
   const progressBar = event.target.querySelector('.progress-bar');
   const updatingBar = event.target.querySelector('.update-bar');
@@ -12,112 +13,55 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
-
-//var modelvw = document.querySelector("model-viewer#kilim");
-//var model = modelvw.model;
-//console.log(model)
-
-
-function divCreator(imgUrl, name) {
-  var divList = document.getElementsByClassName("grid-item")
-  var divCount = divList.length;
-  console.log(divCount)
-  var gridCol1 = document.querySelector('.grid-col-1');
-  var gridCol2 = document.querySelector('.grid-col-2');
-  var i = divCount+1;
-  if (i % 2 === 0) {    
-    var newDiv = document.createElement("div");
-    newDiv.classList.add('grid-item');
-    
-    var linkElement = document.createElement('a');
-    linkElement.href = "#"
-    linkElement.setAttribute('val', divCount-1);
-    linkElement.setAttribute('onclick', 'changeDiv()')
-    
-    var imageElement = document.createElement('img');
-    imageElement.src = imgUrl;
-    
-    var textDiv = document.createElement("div");
-    textDiv.classList.add('bottom-text');
-    textDiv.textContent = name;    
-    
-    gridCol1.appendChild(newDiv);
-    newDiv.appendChild(linkElement);
-    linkElement.appendChild(imageElement);
-    newDiv.appendChild(textDiv);
-  } else {
-    var newDiv = document.createElement("div");
-    newDiv.classList.add('grid-item');
-    
-    var linkElement = document.createElement('a');
-    linkElement.href = "#"
-    linkElement.setAttribute('val', divCount-1);
-    linkElement.setAttribute('onclick', 'changeDiv()')
-    
-    var imageElement = document.createElement('img');
-    imageElement.src = imgUrl;
-    
-    var textDiv = document.createElement("div");
-    textDiv.classList.add('bottom-text');
-    textDiv.textContent = name;    
-    
-    gridCol2.appendChild(newDiv);
-    newDiv.appendChild(linkElement);
-    linkElement.appendChild(imageElement);
-    newDiv.appendChild(textDiv);
-  }
-}
-
-function mainList(i){
-  
-}
-
-
 function changeDiv(i) {
   console.log(i)
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   var textureChange = document.getElementById("texture");
-  var imgList = [
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
-    "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",    
-  ];
-  var infoHeaderList = [
-    "Yastık Yüzü",
-    "Yastık Yüzü",
-    "Yastık Yüzü",
-    "Seccade",
-    "Yastık Yüzü",
-    "Çuval",
-    
-  ];
-  var infoTextList = [
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    ];
+  
+  
+var kilimList = [
+    {src: "1.jpg", isim: "Yastık Yüzü",  envanterNo: "992", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "2.jpg", isim: "Yastık Yüzü",  envanterNo:  "1014", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "45x88 cm", gelisi: "Tokat Müzesi’nden Devir", donem: "Geç Osmanlı"},
+{src: "3.jpg", isim: "Yastık Yüzü",  envanterNo: "694", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
+{src: "4.jpg", isim: "Seccade",  envanterNo: "688", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
+{src: "5.jpg", isim: "Yastık Yüzü",  envanterNo: "611", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88 cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "6.jpg", isim: "Çuval",  envanterNo: "440", teknik: "Cicim",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "60x110cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "7.jpg", isim: "Yastık Yüzü",  envanterNo: "609", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "8.jpg", isim: "Kilim (Tek Kanat/ Şak)",  envanterNo: "727", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "79x210cm", gelisi: "Van Müzesi’nden Devir", donem: "Cumhuriyet"},
+{src: "9.jpg", isim: "Yastık Yüzü",  envanterNo: "832", teknik: "Cicim (Seyrek Motifli)",  malzeme: "Yün (Çözgü)-Yün(Atkı)", ebatları: "46x99cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "10.jpg", isim: "Yastık Kılıfı",  envanterNo: "368", teknik: "Zili",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "24x75cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+  ]
 
   if ((listPage.style.display = "unset")) {
-    textureChange.value = imgList[i];
-    console.log(textureChange.value)
+    textureChange.value = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i].src;
+    console.log("texturevalue", textureChange.value)
     var image = document.getElementById("infoImage");
-    var header = document.getElementById("infoTextHeader");
-    var text = document.getElementById("infoText");
+    var isim = document.getElementById("isim");
+    var envanter = document.getElementById("envanter");
+    var teknik = document.getElementById("teknik");
+    var malzeme = document.getElementById("malzeme");
+    var ebat = document.getElementById("ebat");
+    var gelis = document.getElementById("gelis");
+    var donem = document.getElementById("donem");
     infoPage.style.display = "unset";
     listPage.style.display = "none";
-    image.src = imgList[i];
-    header.innerHTML = infoHeaderList[i];
-    text.innerHTML = infoTextList[i];
-    
+    image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i].src;
+    console.log(image.src);
+    isim.innerHTML = kilimList[i].isim;
+    isim.style.fontWeight = "bold";
+    envanter.innerHTML = kilimList[i].envanterNo;
+    envanter.style.fontWeight = "bold";
+    teknik.innerHTML = kilimList[i].teknik;
+    teknik.style.fontWeight = "bold";
+    malzeme.innerHTML = kilimList[i].malzeme;
+    malzeme.style.fontWeight = "bold";
+    ebat.innerHTML = kilimList[i].ebatları;
+    ebat.style.fontWeight = "bold";
+    gelis.innerHTML = kilimList[i].gelisi;
+    gelis.style.fontWeight = "bold";
+    donem.innerHTML = kilimList[i].donem;
+    donem.style.fontWeight = "bold";
   }
 }
 
