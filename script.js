@@ -68,6 +68,11 @@ function divCreator(imgUrl, name) {
   }
 }
 
+function mainList(i){
+  
+}
+
+
 function changeDiv(i) {
   console.log(i)
   var listPage = document.getElementById("bol1");
@@ -83,13 +88,12 @@ function changeDiv(i) {
     "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",    
   ];
   var infoHeaderList = [
-    "Burada 1. kilim gösteriliyor",
-    "Burada 2. kilim gösteriliyor",
-    "Burada 3. kilim gösteriliyor",
-    "Burada 4. kilim gösteriliyor",
-    "Burada 5. kilim gösteriliyor",
-    "Burada 6. kilim gösteriliyor",
-    "Burada 7. kilim gösteriliyor",
+    "Yastık Yüzü",
+    "Yastık Yüzü",
+    "Yastık Yüzü",
+    "Seccade",
+    "Yastık Yüzü",
+    "Çuval",
     
   ];
   var infoTextList = [
