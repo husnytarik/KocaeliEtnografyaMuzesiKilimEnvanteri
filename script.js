@@ -74,6 +74,10 @@ function changeDiv(i) {
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   var textureChange = document.getElementById("texture");
+   
+  var envanterList = [
+    
+  ]
   var imgList = [
     "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
     "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Deneme.png?v=1695802126717",
