@@ -54,6 +54,7 @@ var kilimList = [
     ebat.innerHTML = kilimList[i].ebatları;
     gelis.innerHTML = kilimList[i].gelisi;
     donem.innerHTML = kilimList[i].donem;
+    donem.style.fontWeight = "bold";
   }
 }
 
