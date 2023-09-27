@@ -46,14 +46,14 @@ var kilimList = [
     var donem = document.getElementById("donem");
     infoPage.style.display = "unset";
     listPage.style.display = "none";
-    image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i].src;
+    image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i] + ".png";
     isim.innerHTML = kilimList[i].isim;
     envanter.innerHTML = kilimList[i].envanterNo;
     teknik.innerHTML = kilimList[i].teknik;
     malzeme.innerHTML = kilimList[i].malzeme;
-    ebat.innerHTML = kilimList[i].ebat;
-    gelis.innerHTML = kilimList[i].gelis;
-    donem.innerHTML = kilimList[i].donem;    
+    ebat.innerHTML = kilimList[i].ebatları;
+    gelis.innerHTML = kilimList[i].gelisi;
+    donem.innerHTML = kilimList[i].donem;
   }
 }
 

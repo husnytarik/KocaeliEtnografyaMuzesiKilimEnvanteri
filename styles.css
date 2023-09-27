@@ -138,6 +138,14 @@ p2 {
 
 .textHolder {
   width: 99%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.textHolder h1{
+  font-weight: regular;  
+ font-size: 20px; 
 }
 
 .buttonHolderContainer {
