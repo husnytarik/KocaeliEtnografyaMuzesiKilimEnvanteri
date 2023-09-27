@@ -68,10 +68,6 @@ function divCreator(imgUrl, name) {
   }
 }
 
-function mainList(i){
-  
-}
-
 
 function changeDiv(i) {
   console.log(i)
