@@ -22,7 +22,7 @@ function changeDiv(i) {
   
   
 var kilimList = [
-    {src: "1.jpg", isim: "Yastık Yüzü",  envanterNo: "992", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+    {src: "Deneme.png", isim: "Yastık Yüzü",  envanterNo: "992", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
 {src: "2.jpg", isim: "Yastık Yüzü",  envanterNo:  "1014", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "45x88 cm", gelisi: "Tokat Müzesi’nden Devir", donem: "Geç Osmanlı"},
 {src: "3.jpg", isim: "Yastık Yüzü",  envanterNo: "694", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
 {src: "4.jpg", isim: "Seccade",  envanterNo: "688", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
