@@ -6,6 +6,8 @@ modelViewer.addEventListener("load", () => {
       const texture = await modelViewer.createTexture(event.target.value);
       material.pbrMetallicRoughness[channel].setTexture(texture);
       console.log(material);
+      material.setAlphaMode('MASK');
+      console.log(material.getAlphaMode(), "alpha")
     }
   };
   document.querySelector("#texture").addEventListener("click", (event) => {
