@@ -6,7 +6,7 @@ modelViewer.addEventListener("load", () => {
       const texture = await modelViewer.createTexture(event.target.value);
       material.pbrMetallicRoughness[channel].setTexture(texture);
       console.log(material);
-      material.setAlphaMode('MASK');
+      material.setAlphaMode('BLEND');
       console.log(material.getAlphaMode(), "alpha")
     }
   };
