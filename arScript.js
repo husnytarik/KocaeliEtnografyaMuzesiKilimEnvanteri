@@ -1,4 +1,5 @@
 const modelViewer = document.getElementById("modelViewer");
+modelViewer.arPlacement = "Wall";
 modelViewer.addEventListener("load", () => {
   const material = modelViewer.model.materials[0];
   const createAndApplyTexture = async (channel, event) => {

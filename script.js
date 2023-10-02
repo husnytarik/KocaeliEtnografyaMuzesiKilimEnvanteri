@@ -13,6 +13,7 @@ const onProgress = (event) => {
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
 
+
 function changeDiv(i) {
   console.log(i)
   var listPage = document.getElementById("bol1");
@@ -72,7 +73,7 @@ function changeDivBack() {
   listPage.style.display = "unset";
 }
 
-function runAr() {
+function runAr() {  
   var but = document.getElementById("arBut");
   const loadRing = document.getElementById("loadingRing");  
   const overlay = document.getElementById("overlay");
