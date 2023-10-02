@@ -41,7 +41,6 @@ p1 {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   gap: 3%;
-  
 }
 
 .grid-item {
