@@ -22,16 +22,16 @@ function changeDiv(i) {
   
   
 var kilimList = [
-    {src: "Deneme.png", isim: "Yastık Yüzü",  envanterNo: "992", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
-{src: "2.jpg", isim: "Yastık Yüzü",  envanterNo:  "1014", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "45x88 cm", gelisi: "Tokat Müzesi’nden Devir", donem: "Geç Osmanlı"},
-{src: "3.jpg", isim: "Yastık Yüzü",  envanterNo: "694", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
-{src: "4.jpg", isim: "Seccade",  envanterNo: "688", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
-{src: "5.jpg", isim: "Yastık Yüzü",  envanterNo: "611", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88 cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
-{src: "6.jpg", isim: "Çuval",  envanterNo: "440", teknik: "Cicim",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "60x110cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
-{src: "7.jpg", isim: "Yastık Yüzü",  envanterNo: "609", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
-{src: "8.jpg", isim: "Kilim (Tek Kanat/ Şak)",  envanterNo: "727", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "79x210cm", gelisi: "Van Müzesi’nden Devir", donem: "Cumhuriyet"},
-{src: "9.jpg", isim: "Yastık Yüzü",  envanterNo: "832", teknik: "Cicim (Seyrek Motifli)",  malzeme: "Yün (Çözgü)-Yün(Atkı)", ebatları: "46x99cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
-{src: "10.jpg", isim: "Yastık Kılıfı",  envanterNo: "368", teknik: "Zili",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "24x75cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+    {src: "carpet1.png", isim: "Yastık Yüzü",  envanterNo: "992", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "carpet2.png", isim: "Yastık Yüzü",  envanterNo:  "1014", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "45x88 cm", gelisi: "Tokat Müzesi’nden Devir", donem: "Geç Osmanlı"},
+{src: "carpet3.png", isim: "Yastık Yüzü",  envanterNo: "694", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
+{src: "carpet4.png", isim: "Seccade",  envanterNo: "688", teknik: "Kilim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet"},
+{src: "carpet5.png", isim: "Yastık Yüzü",  envanterNo: "611", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88 cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "carpet6.png", isim: "Çuval",  envanterNo: "440", teknik: "Cicim",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "60x110cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "carpet7.png", isim: "Yastık Yüzü",  envanterNo: "609", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "carpet8.png", isim: "Kilim (Tek Kanat/ Şak)",  envanterNo: "727", teknik: "Cicim",  malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "79x210cm", gelisi: "Van Müzesi’nden Devir", donem: "Cumhuriyet"},
+{src: "carpet9.png", isim: "Yastık Yüzü",  envanterNo: "832", teknik: "Cicim (Seyrek Motifli)",  malzeme: "Yün (Çözgü)-Yün(Atkı)", ebatları: "46x99cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
+{src: "carpet10.png", isim: "Yastık Kılıfı",  envanterNo: "368", teknik: "Zili",  malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "24x75cm", gelisi: "Satın Alma", donem: "Cumhuriyet"},
   ]
 
   if ((listPage.style.display = "unset")) {
