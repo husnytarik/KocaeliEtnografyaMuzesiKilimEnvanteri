@@ -84,13 +84,16 @@ p1 {
 }
 
 .image-holder {
-  height: 300px;
-  width: 100%;  
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
 }
 
 .image-holder img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 0 0 20% 0;
 }
@@ -99,7 +102,7 @@ h4 {
   margin: 20px;
   color: #e3e3e3;
   font-family: "Roboto", sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 p2 {
@@ -108,7 +111,12 @@ p2 {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
-
+.details{
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  overflow: hidden;
+}
 .buttonHolder {
   position: absolute;
   bottom: 0;
