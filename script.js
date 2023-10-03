@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
         setTimeout(function () {
             splashScreen.style.display = "none";
-        }, 1000);
-    }, 1000);
+        }, 3000);
+    }, 3000);
 });
 
 
