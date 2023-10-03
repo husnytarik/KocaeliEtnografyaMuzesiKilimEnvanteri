@@ -47,7 +47,7 @@ var kilimList = [
     var donem = document.getElementById("donem");
     infoPage.style.display = "unset";
     listPage.style.display = "none";
-    image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + kilimList[i].src;
+    image.src = "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" + "D" + kilimList[i].src;
     console.log(image.src);
     isim.innerHTML = kilimList[i].isim;
     isim.style.fontWeight = "bold";
