@@ -1,4 +1,17 @@
-// Handles loading the events for <model-viewer>'s slotted progress bar
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        var splashScreen = document.querySelector(".splash-screen");
+        var content = document.querySelector(".content");
+        
+        splashScreen.style.opacity = "0";
+        content.style.display = "block";
+        
+        setTimeout(function () {
+            splashScreen.style.display = "none";
+        }, 1000);
+    }, 1000);
+});
+
 
 const onProgress = (event) => {
   const progressBar = event.target.querySelector('.progress-bar');

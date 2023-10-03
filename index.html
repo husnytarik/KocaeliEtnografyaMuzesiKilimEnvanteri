@@ -9,146 +9,152 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="bol1" class="bolum1">
-      <div class="head-zone">
-        <h1>Süleyman Demirel Üniversitesi</h1>
-        <p1>Sanal Kilim</p1>
-      </div>
-      <div class="divider-line"></div>
-      <div class="grid-container">
-        <div class="grid-col-1">
-          <div class="grid-item" style="height: 120px">
-            <a href="#" onclick="changeDiv(0);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet1.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(2);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet3.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(4);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet5.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(6);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet7.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(6);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet9.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-        </div>
-        <div class="grid-col-2">
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(1);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet2.png"
-              />
-              <div class="bottom-text">Yastık Yüzü</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(3);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet4.png"
-              />
-              <div class="bottom-text">Seccade</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(5);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet6.png"
-              />
-              <div class="bottom-text">Çuval</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(5);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet8.png"
-              />
-              <div class="bottom-text">Kilim(Tek Kanat/Şak)</div>
-            </a>
-          </div>
-          <div class="grid-item">
-            <a href="#" onclick="changeDiv(5);"
-              ><img
-                src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet10.png"
-              />
-              <div class="bottom-text">Yastık Kılıfı</div>
-            </a>
-          </div>
-        </div>
+    <div class="splash-screen">
+      <div class="splash-logo">
+        <img src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/sdlogo.png?v=1696345740952" alt="Logo" />
       </div>
     </div>
-    <div id="bol2" class="bolum2">
-      <model-viewer
-        style="display: none"
-        id="modelViewer"
-        loading="eager"
-        src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/SM_Carpet2.glb?v=1689007314768"
-        ar
-        ar-placement="wall"
-        rotation="0 90 90"
-        ar-modes="scene-viewer webxr quick-look"
-        camera-controls
-        shadow-intensity="0"
-        autoplay
-      >
-        <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
+    <div class="content">
+      <div id="bol1" class="bolum1">
+        <div class="head-zone">
+          <h1>Süleyman Demirel Üniversitesi</h1>
+          <p1>Sanal Kilim</p1>
         </div>
-        <button id="arBut" slot="ar-button" class="ar-but">
-          <i class="fa-solid fa-eye fa-fade"></i>
-        </button>
-        <div id="ar-prompt"></div>
-      </model-viewer>
-      <script type="module" src="arScript.js"></script>
-      <script src="script.js"></script>
-      <script
-        type="module"
-        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
-      ></script>
-
-      <a href="#" class="back-button" onclick="changeDivBack();">
-        <iconify-icon
-          icon="ion:chevron-back-outline"
-          style="color: white; margin-right: 2.3px"
-          height="30"
-          width="30"
-        ></iconify-icon
-      ></a>
-      <div class="imgCon">
-        <img id="infoImage" />
-      </div>
-      <div class="head">
-        <h4 id="isim"></h4>
         <div class="divider-line"></div>
+        <div class="grid-container">
+          <div class="grid-col-1">
+            <div class="grid-item" style="height: 120px">
+              <a href="#" onclick="changeDiv(0);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet1.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(2);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet3.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(4);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet5.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(6);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet7.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(6);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet9.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+          </div>
+          <div class="grid-col-2">
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(1);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet2.png"
+                />
+                <div class="bottom-text">Yastık Yüzü</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(3);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet4.png"
+                />
+                <div class="bottom-text">Seccade</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(5);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet6.png"
+                />
+                <div class="bottom-text">Çuval</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(5);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet8.png"
+                />
+                <div class="bottom-text">Kilim(Tek Kanat/Şak)</div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(5);"
+                ><img
+                  src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/Dcarpet10.png"
+                />
+                <div class="bottom-text">Yastık Kılıfı</div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="details">
+      <div id="bol2" class="bolum2">
+        <model-viewer
+          style="display: none"
+          id="modelViewer"
+          loading="eager"
+          src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/SM_Carpet2.glb?v=1689007314768"
+          ar
+          ar-placement="wall"
+          rotation="0 90 90"
+          ar-modes="scene-viewer webxr quick-look"
+          camera-controls
+          shadow-intensity="0"
+          autoplay
+        >
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button id="arBut" slot="ar-button" class="ar-but">
+            <i class="fa-solid fa-eye fa-fade"></i>
+          </button>
+          <div id="ar-prompt"></div>
+        </model-viewer>
+        <script type="module" src="arScript.js"></script>
+        <script src="script.js"></script>
+        <script
+          type="module"
+          src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+        ></script>
+
+        <a href="#" class="back-button" onclick="changeDivBack();">
+          <iconify-icon
+            icon="ion:chevron-back-outline"
+            style="color: white; margin-right: 2.3px"
+            height="30"
+            width="30"
+          ></iconify-icon
+        ></a>
+        <div class="imgCon">
+          <img id="infoImage" />
+        </div>
+        <div class="head">
+          <h4 id="isim"></h4>
+          <div class="divider-line"></div>
+        </div>
+        <div class="details">
           <h class="maddeler">
             Envanter No:
             <h id="envanter"></h> </h
@@ -173,21 +179,22 @@
             Donemi:
             <h id="donem"></h> </h
           ><br /><br />
-      </div>
-      <div class="buttonHolderContainer">
-        <div class="buttonHolder">
-          <div class="divider-line"></div>
-          <button id="texture" value="1" class="arButtons" onclick="runAr()">
-            Evinde Gör
-          </button>
         </div>
-      </div>
-      <div id="overlay" style="display: none" class="overlay">
-        <div id="loadingRing" style="display: none" class="lds-ring">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="buttonHolderContainer">
+          <div class="buttonHolder">
+            <div class="divider-line"></div>
+            <button id="texture" value="1" class="arButtons" onclick="runAr()">
+              Evinde Gör
+            </button>
+          </div>
+        </div>
+        <div id="overlay" style="display: none" class="overlay">
+          <div id="loadingRing" style="display: none" class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </div>

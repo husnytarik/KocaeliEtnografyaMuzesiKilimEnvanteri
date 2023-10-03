@@ -4,6 +4,26 @@ html {
   background-color: #151515;
 }
 
+.splash-screen {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 1s;
+}
+
+.splash-logo {
+    transform: translateY(-100%);
+}
+
+.content {
+    display: none;
+}
+
 .bolum1 {
   display: unset;
 }
