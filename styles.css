@@ -2,7 +2,7 @@ body,
 html {
   width: 97%;
   background-color: #151515;
-  overflow: none;
+  overflow: hidden;
 }
 
 .bolum1 {
@@ -87,9 +87,9 @@ p1 {
   background-color: red;
   position: absolute;
   top:0;
-  height: 20%;
+  height: 40%;
   width:100%;
-  overflow:hidden
+  overflow:hidden;
 }
 
 .imgCon img {
@@ -100,13 +100,23 @@ p1 {
 
 .details{
   position: absolute;
-  top: 50%;
-  height: 28%;
+  top: 41%;
+  height: 45%;
   width: 80%;
   overflow: auto;
 }
-
-
+.details h4{
+  margin: 20px;
+  color: #e3e3e3;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.details h{
+  margin: 20px;
+  color: #e3e3e3;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
 
 h4 {
   margin: 20px;
