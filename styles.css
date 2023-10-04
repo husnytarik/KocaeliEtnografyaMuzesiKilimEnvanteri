@@ -117,6 +117,20 @@ p1 {
   border-radius: 0 0 70% 0;
 }
 
+.imgCon:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/icon.png?v=1696403750057);
+		}
+
+.imgCon img::selection { background-color: transparent; }
+#zoomim img:hover { cursor: url(grab.cur), default; }
+
 .head {
   position: absolute;
   top: 30%;
