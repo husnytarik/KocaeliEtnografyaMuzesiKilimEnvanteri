@@ -5,22 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="jquery.zoom.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#ex2").zoom({ on: "grab" });
-      });
-    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="splash-screen">
       <div class="splash-logo">
-        <img
-          src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/sdlogo.png?v=1696345740952"
-          alt="Logo"
-        />
+        <img src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/sdlogo.png?v=1696345740952" alt="Logo" />
       </div>
     </div>
     <div class="content">
@@ -156,16 +147,9 @@
             width="30"
           ></iconify-icon
         ></a>
-        <span class="zoom" id="ex2">
-          <img
-            src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/carpet3.png?v=1696322988122"
-            width="290"
-            height="320"
-            z-index="9999999"
-            alt="Roxy on the Ohoopee"
-          />
-          <p>Grab</p>
-        </span>
+        <div class="imgCon">
+          <img id="infoImage" />
+        </div>
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>

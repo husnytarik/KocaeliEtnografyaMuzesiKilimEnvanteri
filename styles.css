@@ -37,6 +37,15 @@ html {
   margin: 2%;
 }
 
+.image-zoom-available {
+  cursor: zoom-in;
+  overflow: none;
+}
+.image-zoom-available.is-active {
+  cursor: none;
+  overflow: none;
+}
+
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
@@ -93,31 +102,19 @@ p1 {
   user-select: none;
 }
 
-.zoom {
-			display:inline-block;
-			position: relative;
-		}
-		
-		/* magnifying glass icon */
-		.zoom:after {
-			content:'';
-			display:block; 
-			width:33px; 
-			height:33px; 
-			position:absolute; 
-			top:0;
-			right:0;
-			background:url(icon.png);
-		}
+.imgCon {
+  position: absolute;
+  top: 0;
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+}
 
-		.zoom img {
-			display: block;
-		}
-
-		.zoom img::selection { background-color: transparent; }
-
-		#ex2 img:hover { cursor: url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/grab.cur), default; }
-		#ex2 img:active { cursor: url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/grabbed.cur), default; }
+.imgCon img {
+  width: 95%;
+  object-fit: cover;
+  border-radius: 0 0 70% 0;
+}
 
 .head {
   position: absolute;
