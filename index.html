@@ -7,12 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	  <script src="jquery.zoom.js"></script>
-    <script>
-		$(document).ready(function(){
-			$('#zoomim').zoom({ on:'grab' });
-		});
-	</script>
+	  <script src="jquery.zoom.js"></script>    
     <title>Document</title>
   </head>
   <body>
@@ -157,9 +152,15 @@
             width="30"
           ></iconify-icon
         ></a>
-        <div class="imgCon" id="zoomim">
-          <img id="infoImage" />
-        </div>
+        <span class="zoom" id="ex2">
+          <!--<img id="infoImage" />-->
+          <img src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/carpet3.png?v=1696322988122" width="555" height="320" />
+        </span>
+        <script>
+		$(document).ready(function(){
+			$('#ex2').zoom();  
+		});
+	</script>
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>

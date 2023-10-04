@@ -31,7 +31,6 @@ html {
 
 .bolum2 {
   display: none;
-  overflow: hidden;
 }
 
 .head-zone {
@@ -103,21 +102,18 @@ p1 {
   user-select: none;
 }
 
-.imgCon {
-  position: absolute;
-  top: 0;
-  height: 30%;
-  width: 100%;
-  overflow: hidden;
-}
+/* styles unrelated to zoom */
+		* { border:0; margin:0; padding:0; }
+		p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
 
-.imgCon img {
-  width: 95%;
-  object-fit: cover;
-  border-radius: 0 0 70% 0;
-}
-
-.imgCon:after {
+		/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
 			content:'';
 			display:block; 
 			width:33px; 
@@ -125,11 +121,17 @@ p1 {
 			position:absolute; 
 			top:0;
 			right:0;
-			background:url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/icon.png?v=1696403750057);
+			background:url(icon.png);
 		}
 
-.imgCon img::selection { background-color: transparent; }
-#zoomim img:hover { cursor: url(grab.cur), default; }
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
 
 .head {
   position: absolute;
