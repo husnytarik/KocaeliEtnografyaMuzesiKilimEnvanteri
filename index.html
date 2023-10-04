@@ -8,6 +8,11 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	  <script src="jquery.zoom.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.grid-item').zoom({ on:'grab' });
+		});
+	</script>
     <title>Document</title>
   </head>
   <body>
@@ -155,11 +160,6 @@
         <div class="imgCon">
           <img id="infoImage" />
         </div>
-        <script>
-          $(document).ready(function () {
-            $(".imgCon").zoom({ on:'grab' });
-          });
-        </script>
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>
