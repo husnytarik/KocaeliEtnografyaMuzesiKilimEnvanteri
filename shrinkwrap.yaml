@@ -1,0 +1,12 @@
+dependencies:
+  jquery: 3.7.1
+packages:
+  /jquery/3.7.1:
+    dev: false
+    resolution:
+      integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  jquery: '>=1.7'

@@ -37,15 +37,6 @@ html {
   margin: 2%;
 }
 
-.image-zoom-available {
-  cursor: zoom-in;
-  overflow: none;
-}
-.image-zoom-available.is-active {
-  cursor: none;
-  overflow: none;
-}
-
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
@@ -102,12 +93,7 @@ p1 {
   user-select: none;
 }
 
-/* styles unrelated to zoom */
-		* { border:0; margin:0; padding:0; }
-		p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
-
-		/* these styles are for the demo, but are not required for the plugin */
-		.zoom {
+.zoom {
 			display:inline-block;
 			position: relative;
 		}
@@ -130,8 +116,8 @@ p1 {
 
 		.zoom img::selection { background-color: transparent; }
 
-		#ex2 img:hover { cursor: url(grab.cur), default; }
-		#ex2 img:active { cursor: url(grabbed.cur), default; }
+		#ex2 img:hover { cursor: url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/grab.cur), default; }
+		#ex2 img:active { cursor: url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/grabbed.cur), default; }
 
 .head {
   position: absolute;
