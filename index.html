@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="jquery.zoom.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="splash-screen">
       <div class="splash-logo">
-        <img src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/sdlogo.png?v=1696345740952" alt="Logo" />
+        <img
+          src="https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/sdlogo.png?v=1696345740952"
+          alt="Logo"
+        />
       </div>
     </div>
     <div class="content">
@@ -150,6 +154,9 @@
         <div class="imgCon">
           <img id="infoImage" />
         </div>
+        <script type="text/javascript">
+          $(".imgCon").izoomify();
+        </script>
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>
