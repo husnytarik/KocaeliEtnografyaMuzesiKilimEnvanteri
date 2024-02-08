@@ -1,3 +1,4 @@
+body,
 html {
   background-color: #151515;
 }
@@ -100,34 +101,41 @@ p1 {
 }
 
 .grid-container {
+  width: 100%;
   padding-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 45%);
-  gap: 8%;
-  margin-left: 2%;
+  grid-template-columns: repeat(2, 50%);
+  gap: 3%;
+}
+
+.grid-container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    gap: 3%;
 }
 
 .grid-item {
-  height: 400px;
-  width: 100%;
-  margin-bottom: 30%;
-  border-radius: 10px;
-  border: red;
-  overflow: hidden;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
+    height: 200px;
+    width: 88%;
+    margin-bottom: 30%;
+    border-radius: 10px;
+    border: red;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
 }
 
 .grid-item img {
-  width: 100%;
-  min-width: 250px;
-  object-fit: contain;
+    width: 100%;
+    min-width: 250px;
+    object-fit: contain;
 }
 
 /* Bottom left text */
@@ -137,7 +145,7 @@ p1 {
   color: white;
   position: absolute;
   left: 0;
-  bottom: -5%;
+  bottom: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
