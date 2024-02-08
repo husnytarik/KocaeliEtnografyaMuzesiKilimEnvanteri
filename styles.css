@@ -17,17 +17,17 @@ html {
 .zoom:after {
   content: "";
   display: block;
-  width: 33px;
-  height: 33px;
   position: absolute;
   top: 0;
+  overflow: hidden;
   right: 0;
+  background: url(icon.png);
+
 }
 
 .zoom img {
   display: block;
   width: 100%;
-  object-fit: cover;
 }
 
 .zoom img::selection {
@@ -73,6 +73,7 @@ html {
 }
 
 .bolum2 {
+  align-content: center;
   display: none;
 }
 
@@ -172,7 +173,7 @@ p1 {
   position: absolute;
   top: 30%;
   height: 1%;
-  width: 80%;
+  width: 100%;
 }
 
 .details {
