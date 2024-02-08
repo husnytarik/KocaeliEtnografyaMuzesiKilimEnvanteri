@@ -1,20 +1,23 @@
-body,
+body{
+  overflow-x: hidden;  
+}
 html {
   overflow-x: hidden;
   background-color: #151515;
 }
 
 .zoom {
+  overflow-x: hidden;  
   display: inline-block;
   position: absolute;
   top: 0;
   height: 30%;
   width: 100%;
-  overflow: hidden;
 }
 
 /* magnifying glass icon */
 .zoom:after {
+  overflow-x: hidden;  
   content: "";
   display: block;
   position: absolute;
@@ -26,6 +29,7 @@ html {
 }
 
 .zoom img {
+  overflow-x: hidden;  
   display: block;
   width: 100%;
 }
@@ -74,6 +78,7 @@ html {
 
 .bolum2 {
   align-content: center;
+  overflow: none;  
   display: none;
 }
 
@@ -230,7 +235,7 @@ p2 {
     margin-bottom: 10%;
     background-color: #ff5b44;
     color: white;
-    height: 10%;
+    height: 60px;
     width: 100%;
     border-radius: 30px;
     font-family: "Roboto", sans-serif;
