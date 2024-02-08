@@ -178,14 +178,14 @@ p1 {
   position: absolute;
   top: 30%;
   height: 1%;
-  width: 80%;
+  width: 100%;
 }
 
 .details {
   position: absolute;
   top: 43%;
   height: 50%;
-  width: 99%;
+  width: 80%;
   overflow: auto;
 }
 

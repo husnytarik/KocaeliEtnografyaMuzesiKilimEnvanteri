@@ -148,8 +148,6 @@ function changeDiv(i) {
     var ebat = document.getElementById("ebat");
     var gelis = document.getElementById("gelis");
     var donem = document.getElementById("donem");
-    infoPage.style.display = "unset";
-    listPage.style.display = "none";
     image.src =
       "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" +
       "D" +
@@ -178,6 +176,8 @@ function changeDiv(i) {
         on: "grab",
       });
     });
+    infoPage.style.display = "unset";
+    listPage.style.display = "none";
   }
 }
 
