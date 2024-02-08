@@ -120,7 +120,6 @@ p1 {
     width: 88%;
     margin-bottom: 30%;
     border-radius: 10px;
-    border: red;
     overflow: hidden;
     align-items: center;
     position: relative;
@@ -135,16 +134,17 @@ p1 {
 .grid-item img {
     width: 100%;
     min-width: 250px;
+    border-radius: 10px;
     object-fit: contain;
 }
 
 /* Bottom left text */
 .bottom-text {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, bold, sans-serif;
   font-size: 12px;
   color: white;
   position: absolute;
-  left: 0;
+  left: 3%;
   bottom: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
