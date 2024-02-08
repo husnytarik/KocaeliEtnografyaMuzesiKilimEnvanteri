@@ -1,4 +1,4 @@
-body,
+
 html {
     background-color: #151515;
 }
@@ -21,7 +21,6 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(icon.png);
 }
 
 .zoom img {
