@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }, 3000);
 });
+const modelViewer = document.getElementById("modelViewer");
 
 
 const onProgress = (event) => {
@@ -31,7 +32,7 @@ function changeDiv(i) {
     console.log(i)
     var listPage = document.getElementById("bol1");
     var infoPage = document.getElementById("bol2");
-    var textureChange = document.getElementById("arButtons");
+    var textureChange = document.getElementsByClassName("arButtons");
 
 
     var kilimList = [
@@ -90,7 +91,6 @@ function changeDivBack() {
 }
 
 function runAr(x) {
-    const modelViewer = document.getElementById('modelViewer');
     if(x="w"){
         modelViewer.setAttribute("ar-placement", "wall")
     }else if(x="f"){
