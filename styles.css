@@ -212,46 +212,41 @@ p2 {
   font-size: 12px;
 }
 
-.buttonHolderContainer {
-  position: absolute;
-  width:100%;
-  bottom: 3%;
-  display: flex;
-  margin: 10px;
-  align-content: center;
-
-}
-
 .buttonHolder {
-  bottom: 0;
-  width: 50%;
-
+    position: absolute;
+    bottom: 0;
+    width:60%;
 }
 
 .divider-line {
-  background: #ff5b44;
-  width: 100%;
-  height: 1px;
-  margin: 15px 0;
+    background: #ff5b44;
+    width: 98%;
+    height: 1px;
+    margin: 15px 0;
+    display: flex;
 }
 
 .arButtons {
-  margin: 10px;
-  border: none;
-  background-color: #ff5b44;
-  color: white;
-  height: 50px;
-  width: 60%;
-  border-radius: 30px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
+    margin-bottom: 10%;
+    background-color: #ff5b44;
+    color: white;
+    height: 10%;
+    width: 100%;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.buttonHolderContainer {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .maddeler {
-  font-weight: thin;
+    font-weight: thin;
 }
-
-
 
 .back-button {
   margin: 20px;
