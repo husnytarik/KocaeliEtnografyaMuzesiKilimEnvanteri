@@ -31,7 +31,7 @@ function changeDiv(i) {
     console.log(i)
     var listPage = document.getElementById("bol1");
     var infoPage = document.getElementById("bol2");
-    var textureChange = document.getElementById("texture");
+    var textureChange = document.getElementById("arButtons");
 
 
     var kilimList = [
@@ -89,7 +89,13 @@ function changeDivBack() {
     listPage.style.display = "unset";
 }
 
-function runAr() {
+function runAr(x) {
+    const modelViewer = document.getElementById('modelViewer');
+    if(x="w"){
+        modelViewer.setAttribute("ar-placement", "wall")
+    }else if(x="f"){
+        modelViewer.setAttribute("ar-placement", "floor")
+    }
     var but = document.getElementById("arBut");
     const loadRing = document.getElementById("loadingRing");
     const overlay = document.getElementById("overlay");
@@ -100,5 +106,6 @@ function runAr() {
         overlay.style.display = "none";
         loadRing.style.display = "none";
     }, 5000);
+    console.log(modelViewer.getAttribute("ar-placement"), "Placement")
 }
 
