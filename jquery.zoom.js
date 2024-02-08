@@ -31,7 +31,7 @@
 
 		// The parent element needs positioning so that the zoomed element can be correctly positioned within.
 		target.style.position = /(absolute|fixed)/.test(position) ? position : 'relative';
-		target.style.overflow = 'hidden';
+		target.style.overflow = 'none';
 		img.style.width = img.style.height = '';
 
 		$(img)
@@ -45,7 +45,8 @@
 				height: img.height * magnify,
 				border: 'none',
 				maxWidth: 'none',
-				maxHeight: 'none'
+				maxHeight: 'none',
+        overflow: 'hidden'
 			})
 			.appendTo(target);
 

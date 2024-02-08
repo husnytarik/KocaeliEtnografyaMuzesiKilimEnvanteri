@@ -1,5 +1,5 @@
 body{
-  overflow-x: hidden;  
+  max-width: 100%; overflow-x: hidden; 
 }
 html {
   overflow-x: hidden;
@@ -17,12 +17,11 @@ html {
 
 /* magnifying glass icon */
 .zoom:after {
-  overflow-x: hidden;  
+  overflow-x: none;  
   content: "";
   display: block;
   position: absolute;
   top: 0;
-  overflow: hidden;
   right: 0;
   background: url(https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/icon.png);
 
@@ -77,8 +76,9 @@ html {
 }
 
 .bolum2 {
+  max-width: 100%; 
+  overflow-x: hidden;
   align-content: center;
-  overflow: none;  
   display: none;
 }
 
@@ -178,14 +178,14 @@ p1 {
   position: absolute;
   top: 30%;
   height: 1%;
-  width: 100%;
+  width: 80%;
 }
 
 .details {
   position: absolute;
   top: 43%;
   height: 50%;
-  width: 80%;
+  width: 99%;
   overflow: auto;
 }
 
