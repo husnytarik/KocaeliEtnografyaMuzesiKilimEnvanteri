@@ -10,7 +10,7 @@ modelViewer.addEventListener("load", () => {
       console.log(material.getAlphaMode(), "alpha")
     }
   };
-  document.document.getElementById("texture").addEventListener("click", (event) => {
+  document.querySelector("#texture").addEventListener("click", (event) => {
     createAndApplyTexture("baseColorTexture", event);
   });
 });

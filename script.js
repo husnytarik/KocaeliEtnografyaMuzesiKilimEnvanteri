@@ -188,7 +188,7 @@ function changeDivBack() {
   listPage.style.display = "unset";
 }
 
-function runAr(x) {
+function runAr() {
   var but = document.getElementById("arBut");
   const loadRing = document.getElementById("loadingRing");
   const overlay = document.getElementById("overlay");
