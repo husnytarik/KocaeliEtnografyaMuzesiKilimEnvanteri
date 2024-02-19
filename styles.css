@@ -240,6 +240,7 @@ p2 {
     border-radius: 30px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    border: none;
 }
 
 .buttonHolderContainer {
@@ -249,8 +250,11 @@ p2 {
     justify-content: center;
 }
 
-.maddeler {
-    font-weight: thin;
+table, th, td {
+  padding-left: 50px;
+  padding-top: 5px;
+  color: white;
+  font-weight: bold;
 }
 
 .back-button {
