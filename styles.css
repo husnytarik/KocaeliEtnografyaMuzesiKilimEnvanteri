@@ -251,6 +251,7 @@ p2 {
 
 .maddeler {
     font-weight: thin;
+    display: flex;
 }
 
 .back-button {
