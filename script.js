@@ -27,159 +27,69 @@ const onProgress = (event) => {
 document.querySelector("model-viewer").addEventListener("progress", onProgress);
 
 function changeDiv(i) {
-  console.log(i);
   var listPage = document.getElementById("bol1");
   var infoPage = document.getElementById("bol2");
   var textureChange = document.getElementById("texture");
 
   var kilimList = [
-    {
-      src: "Rcarpet1.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "992",
-      teknik: "Kilim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "98x55cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet2.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "1014",
-      teknik: "Kilim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "45x88 cm",
-      gelisi: "Tokat Müzesi’nden Devir",
-      donem: "Geç Osmanlı",
-    },
-    {
-      src: "Rcarpet3.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "694",
-      teknik: "Cicim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "93x147cm",
-      gelisi: "Tokat Müzesi'nden Devir",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet4.png",
-      isim: "Seccade",
-      envanterNo: "688",
-      teknik: "Kilim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "93x147cm",
-      gelisi: "Tokat Müzesi'nden Devir",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet5.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "611",
-      teknik: "Cicim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "41x88 cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet6.png",
-      isim: "Çuval",
-      envanterNo: "440",
-      teknik: "Cicim",
-      malzeme: "Kıl (Çözgü)-Yün (Atkı)",
-      ebatları: "60x110cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet7.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "609",
-      teknik: "Cicim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "41x88cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet8.png",
-      isim: "Kilim (Tek Kanat/ Şak)",
-      envanterNo: "727",
-      teknik: "Cicim",
-      malzeme: "Yün (Çözgü)-Yün (Atkı)",
-      ebatları: "79x210cm",
-      gelisi: "Van Müzesi’nden Devir",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet9.png",
-      isim: "Yastık Yüzü",
-      envanterNo: "832",
-      teknik: "Cicim (Seyrek Motifli)",
-      malzeme: "Yün (Çözgü)-Yün(Atkı)",
-      ebatları: "46x99cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
-    {
-      src: "Rcarpet10.png",
-      isim: "Yastık Kılıfı",
-      envanterNo: "368",
-      teknik: "Zili",
-      malzeme: "Kıl (Çözgü)-Yün (Atkı)",
-      ebatları: "24x75cm",
-      gelisi: "Satın Alma",
-      donem: "Cumhuriyet",
-    },
+    { src: "Rcarpet1.png",  isim: "Yastık Yüzü", envanterNo: "992",  teknik: "Kilim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "98x55cm",   gelisi: "Satın Alma",               donem: "Cumhuriyet" },
+    { src: "Rcarpet2.png",  isim: "Yastık Yüzü", envanterNo: "1014", teknik: "Kilim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "45x88 cm",  gelisi: "Tokat Müzesi’nden Devir", donem: "Geç Osmanlı" },
+    { src: "Rcarpet3.png",  isim: "Yastık Yüzü", envanterNo: "694",  teknik: "Cicim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet" },
+    { src: "Rcarpet4.png",  isim: "Seccade",     envanterNo: "688",  teknik: "Kilim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "93x147cm", gelisi: "Tokat Müzesi'nden Devir", donem: "Cumhuriyet" },
+    { src: "Rcarpet5.png",  isim: "Yastık Yüzü", envanterNo: "611",  teknik: "Cicim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88 cm", gelisi: "Satın Alma",               donem: "Cumhuriyet" },
+    { src: "Rcarpet6.png",  isim: "Çuval",       envanterNo: "440",  teknik: "Cicim", malzeme: "Kıl (Çözgü)-Yün (Atkı)",  ebatları: "60x110cm", gelisi: "Satın Alma",               donem: "Cumhuriyet" },
+    { src: "Rcarpet7.png",  isim: "Yastık Yüzü", envanterNo: "609",  teknik: "Cicim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "41x88cm",  gelisi: "Satın Alma",               donem: "Cumhuriyet" },
+    { src: "Rcarpet8.png",  isim: "Kilim (Tek Kanat/ Şak)", envanterNo: "727", teknik: "Cicim", malzeme: "Yün (Çözgü)-Yün (Atkı)", ebatları: "79x210cm", gelisi: "Van Müzesi’nden Devir", donem: "Cumhuriyet" },
+    { src: "Rcarpet9.png",  isim: "Yastık Yüzü", envanterNo: "832",  teknik: "Cicim (Seyrek Motifli)", malzeme: "Yün (Çözgü)-Yün(Atkı)", ebatları: "46x99cm", gelisi: "Satın Alma", donem: "Cumhuriyet" },
+    { src: "Rcarpet10.png", isim: "Yastık Kılıfı", envanterNo: "368", teknik: "Zili", malzeme: "Kıl (Çözgü)-Yün (Atkı)", ebatları: "24x75cm", gelisi: "Satın Alma", donem: "Cumhuriyet" },
   ];
 
-  if ((listPage.style.display = "unset")) {
-    textureChange.value =
-      "./assets/" +
-      kilimList[i].src;
-    console.log("texturevalue", textureChange.value);
-    var image = document.getElementById("infoImage");
-    var isim = document.getElementById("isim");
-    var envanter = document.getElementById("envanter");
-    var teknik = document.getElementById("teknik");
+  const base = "./assets/";
+  const small = base + kilimList[i].src;       // RcarpetX.png
+  const large = base + "D" + kilimList[i].src; // DRcarpetX.png
+
+  // Liste sayfasındaysak detay sayfasına geç
+  if (listPage.style.display === "unset" || listPage.style.display === "" || listPage.style.display === "block") {
+    // AR butonundaki texture (küçük/ana doku)
+    textureChange.value = small;
+
+    // DOM referansları
+    var image   = document.getElementById("infoImage");
+    var isim    = document.getElementById("isim");
+    var envanter= document.getElementById("envanter");
+    var teknik  = document.getElementById("teknik");
     var malzeme = document.getElementById("malzeme");
-    var ebat = document.getElementById("ebat");
-    var gelis = document.getElementById("gelis");
-    var donem = document.getElementById("donem");
-    image.src =
-      "./assets/" +
-      "D" +
-      kilimList[i].src;
-    console.log(image.src);
-    isim.innerHTML = kilimList[i].isim;
-    isim.style.fontWeight = "bold";
-    envanter.innerHTML = kilimList[i].envanterNo;
-    envanter.style.fontWeight = "bold";
-    teknik.innerHTML = kilimList[i].teknik;
-    teknik.style.fontWeight = "bold";
-    malzeme.innerHTML = kilimList[i].malzeme;
-    malzeme.style.fontWeight = "bold";
-    ebat.innerHTML = kilimList[i].ebatları;
-    ebat.style.fontWeight = "bold";
-    gelis.innerHTML = kilimList[i].gelisi;
-    gelis.style.fontWeight = "bold";
-    donem.innerHTML = kilimList[i].donem;
-    donem.style.fontWeight = "bold";
-    $(document).ready(function () {
-      $("#ex2").zoom({
-        url:
-          "./assets/" +
-          "D" +
-          kilimList[i].src,
-        on: "grab",
-      });
-    });
+    var ebat    = document.getElementById("ebat");
+    var gelis   = document.getElementById("gelis");
+    var donem   = document.getElementById("donem");
+
+    // Önce küçük görseli göster (hız), zoom için büyüğü bağla
+    image.onerror = () => console.warn("Görsel bulunamadı:", image.src);
+    image.onload  = () => {
+      // Var olan zoom'u temizle ve yeniden kur
+      try { $("#ex2").trigger("zoom.destroy"); } catch(e) {}
+      $("#ex2").zoom({ url: large, on: "grab" });
+    };
+    image.src = small;
+
+    // Metinleri bas
+    isim.textContent     = kilimList[i].isim;
+    envanter.textContent = kilimList[i].envanterNo;
+    teknik.textContent   = kilimList[i].teknik;
+    malzeme.textContent  = kilimList[i].malzeme;
+    ebat.textContent     = kilimList[i].ebatları;
+    gelis.textContent    = kilimList[i].gelisi;
+    donem.textContent    = kilimList[i].donem;
+
+    // Kalınlık
+    [isim, envanter, teknik, malzeme, ebat, gelis, donem].forEach(el => el.style.fontWeight = "bold");
+
+    // Sayfa geçişi
     infoPage.style.display = "unset";
     listPage.style.display = "none";
   }
 }
+
 
 function changeDivBack() {
   var listPage = document.getElementById("bol1");
