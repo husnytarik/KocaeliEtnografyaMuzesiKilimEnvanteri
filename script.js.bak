@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     var splashScreen = document.querySelector(".splash-screen");
     var content = document.querySelector(".content");
@@ -137,7 +137,7 @@ function changeDiv(i) {
 
   if ((listPage.style.display = "unset")) {
     textureChange.value =
-      "./assets/" +
+      "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" +
       kilimList[i].src;
     console.log("texturevalue", textureChange.value);
     var image = document.getElementById("infoImage");
@@ -149,7 +149,7 @@ function changeDiv(i) {
     var gelis = document.getElementById("gelis");
     var donem = document.getElementById("donem");
     image.src =
-      "./assets/" +
+      "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" +
       "D" +
       kilimList[i].src;
     console.log(image.src);
@@ -170,7 +170,7 @@ function changeDiv(i) {
     $(document).ready(function () {
       $("#ex2").zoom({
         url:
-          "./assets/" +
+          "https://cdn.glitch.global/61b3137b-3e3b-4c2c-a6e7-9d3dac7f65fa/" +
           "D" +
           kilimList[i].src,
         on: "grab",
@@ -200,4 +200,3 @@ function runAr() {
     loadRing.style.display = "none";
   }, 5000);
 }
-

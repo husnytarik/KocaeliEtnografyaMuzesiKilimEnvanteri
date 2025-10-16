@@ -16,4 +16,3 @@ modelViewer.addEventListener("load", () => {
 });
 
 
-
