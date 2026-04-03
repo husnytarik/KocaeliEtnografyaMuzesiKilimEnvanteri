@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
@@ -14,8 +14,7 @@
   </head>
 
   <body>
-
-    <!-- ── SPLASH ────────────────────────────────────────── -->
+    <!-- ── SPLASH ──────────────────────────────────────── -->
     <div class="splash-screen">
       <div class="splash-logo">
         <img src="./assets/sdlogo.png" alt="Logo" />
@@ -23,95 +22,89 @@
       <span class="splash-line"></span>
     </div>
 
-    <!-- ── CONTENT ───────────────────────────────────────── -->
+    <!-- ── CONTENT ─────────────────────────────────────── -->
     <div class="content">
-
       <!-- SECTION 1 — GALLERY -->
       <div id="bol1" class="bolum1">
-
         <div class="head-zone">
-          <h1>Kocaeli Arkeoloji<br>ve Etnografya Müzesi</h1>
+          <h1>Kocaeli Arkeoloji<br />ve Etnografya Müzesi</h1>
           <p1>Esra Karakullukçuoğlu</p1>
         </div>
 
         <div class="divider-line"></div>
 
         <div class="grid-container">
-
-          <!-- Col 1 -->
           <div class="grid-col-1">
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(0);">
-                <img src="./assets/DRcarpet1.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(0)"
+                ><img src="./assets/DRcarpet1.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(2);">
-                <img src="./assets/DRcarpet3.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(2)"
+                ><img src="./assets/DRcarpet3.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(4);">
-                <img src="./assets/DRcarpet5.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(4)"
+                ><img src="./assets/DRcarpet5.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(6);">
-                <img src="./assets/DRcarpet7.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(6)"
+                ><img src="./assets/DRcarpet7.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(8);">
-                <img src="./assets/DRcarpet9.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(8)"
+                ><img src="./assets/DRcarpet9.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
           </div>
 
-          <!-- Col 2 -->
           <div class="grid-col-2">
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(1);">
-                <img src="./assets/DRcarpet2.png" alt="Yastık Yüzü" />
-              </a>
+              <a href="#" onclick="changeDiv(1)"
+                ><img src="./assets/DRcarpet2.png" alt="Yastık Yüzü"
+              /></a>
               <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(3);">
-                <img src="./assets/DRcarpet4.png" alt="Seccade" />
-              </a>
+              <a href="#" onclick="changeDiv(3)"
+                ><img src="./assets/DRcarpet4.png" alt="Seccade"
+              /></a>
               <div class="bottom-text">Seccade</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(5);">
-                <img src="./assets/DRcarpet6.png" alt="Çuval" />
-              </a>
+              <a href="#" onclick="changeDiv(5)"
+                ><img src="./assets/DRcarpet6.png" alt="Çuval"
+              /></a>
               <div class="bottom-text">Çuval</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(7);">
-                <img src="./assets/DRcarpet8.png" alt="Kilim (Tek Kanat/Şak)" />
-              </a>
+              <a href="#" onclick="changeDiv(7)"
+                ><img src="./assets/DRcarpet8.png" alt="Kilim"
+              /></a>
               <div class="bottom-text">Kilim (Tek Kanat/Şak)</div>
             </div>
             <div class="grid-item">
-              <a href="#" onclick="changeDiv(9);">
-                <img src="./assets/DRcarpet10.png" alt="Yastık Kılıfı" />
-              </a>
+              <a href="#" onclick="changeDiv(9)"
+                ><img src="./assets/DRcarpet10.png" alt="Yastık Kılıfı"
+              /></a>
               <div class="bottom-text">Yastık Kılıfı</div>
             </div>
           </div>
-
         </div>
-      </div><!-- /bolum1 -->
+      </div>
+      <!-- /bolum1 -->
 
       <!-- SECTION 2 — DETAIL -->
       <div id="bol2" class="bolum2">
-
         <model-viewer
           style="display: none"
           id="modelViewer"
@@ -141,28 +134,28 @@
           src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
         ></script>
 
-        <!-- Back -->
-        <a href="#" class="back-button" onclick="changeDivBack();">
+        <!-- Geri butonu -->
+        <a href="#" class="back-button" onclick="changeDivBack()">
           <iconify-icon
             icon="ion:chevron-back-outline"
-            style="color: white; margin-right: 2.3px"
-            height="22"
-            width="22"
+            style="color: #e8e3d9; margin-right: 2px"
+            height="20"
+            width="20"
           ></iconify-icon>
         </a>
 
-        <!-- Image / zoom -->
+        <!-- Fotoğraf -->
         <span class="zoom" id="ex2">
           <img id="infoImage" />
         </span>
 
-        <!-- Title -->
+        <!-- Başlık -->
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>
         </div>
 
-        <!-- Metadata -->
+        <!-- Detay tablosu -->
         <div class="details">
           <table>
             <tr>
@@ -192,7 +185,7 @@
           </table>
         </div>
 
-        <!-- AR Button -->
+        <!-- AR Butonu -->
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
@@ -210,12 +203,15 @@
         <!-- Overlay -->
         <div id="overlay" style="display: none" class="overlay">
           <div id="loadingRing" style="display: none" class="lds-ring">
-            <div></div><div></div><div></div><div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
-
-      </div><!-- /bolum2 -->
-    </div><!-- /content -->
-
+      </div>
+      <!-- /bolum2 -->
+    </div>
+    <!-- /content -->
   </body>
 </html>
