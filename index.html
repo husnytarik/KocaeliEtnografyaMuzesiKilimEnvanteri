@@ -1,10 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="jquery.zoom.js"></script>
@@ -12,112 +14,104 @@
   </head>
 
   <body>
+
+    <!-- ── SPLASH ────────────────────────────────────────── -->
     <div class="splash-screen">
       <div class="splash-logo">
-        <img
-          style="overflow: none"
-          src="./assets/sdlogo.png"
-          alt="Logo"
-        />
+        <img src="./assets/sdlogo.png" alt="Logo" />
       </div>
+      <span class="splash-line"></span>
     </div>
+
+    <!-- ── CONTENT ───────────────────────────────────────── -->
     <div class="content">
+
+      <!-- SECTION 1 — GALLERY -->
       <div id="bol1" class="bolum1">
+
         <div class="head-zone">
-          <h1>KOCAELİ ARKEOLOJİ VE ETNOGRAFYA MÜZESİ</h1>
+          <h1>Kocaeli Arkeoloji<br>ve Etnografya Müzesi</h1>
           <p1>Esra Karakullukçuoğlu</p1>
         </div>
+
         <div class="divider-line"></div>
+
         <div class="grid-container">
+
+          <!-- Col 1 -->
           <div class="grid-col-1">
             <div class="grid-item">
-              <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(0);"
-                ><img
-                  src="./assets/DRcarpet1.png"
-                />
+              <a href="#" onclick="changeDiv(0);">
+                <img src="./assets/DRcarpet1.png" alt="Yastık Yüzü" />
               </a>
-            </div>
-
-            <div class="grid-item">
               <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(2);"
-                ><img
-                  src="./assets/DRcarpet3.png"
-                />
-              </a>
-            </div>
-
-            <div class="grid-item">
-              <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(4);"
-                ><img
-                  src="./assets/DRcarpet5.png"
-                />
-              </a>
             </div>
             <div class="grid-item">
-              <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(6);"
-                ><img
-                  src="./assets/DRcarpet7.png"
-                />
+              <a href="#" onclick="changeDiv(2);">
+                <img src="./assets/DRcarpet3.png" alt="Yastık Yüzü" />
               </a>
+              <div class="bottom-text">Yastık Yüzü</div>
             </div>
             <div class="grid-item">
-              <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(8);"
-                ><img
-                  src="./assets/DRcarpet9.png"
-                />
+              <a href="#" onclick="changeDiv(4);">
+                <img src="./assets/DRcarpet5.png" alt="Yastık Yüzü" />
               </a>
+              <div class="bottom-text">Yastık Yüzü</div>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(6);">
+                <img src="./assets/DRcarpet7.png" alt="Yastık Yüzü" />
+              </a>
+              <div class="bottom-text">Yastık Yüzü</div>
+            </div>
+            <div class="grid-item">
+              <a href="#" onclick="changeDiv(8);">
+                <img src="./assets/DRcarpet9.png" alt="Yastık Yüzü" />
+              </a>
+              <div class="bottom-text">Yastık Yüzü</div>
             </div>
           </div>
+
+          <!-- Col 2 -->
           <div class="grid-col-2">
             <div class="grid-item">
+              <a href="#" onclick="changeDiv(1);">
+                <img src="./assets/DRcarpet2.png" alt="Yastık Yüzü" />
+              </a>
               <div class="bottom-text">Yastık Yüzü</div>
-              <a href="#" onclick="changeDiv(1);"
-                ><img
-                  src="./assets/DRcarpet2.png"
-                />
-              </a>
             </div>
             <div class="grid-item">
+              <a href="#" onclick="changeDiv(3);">
+                <img src="./assets/DRcarpet4.png" alt="Seccade" />
+              </a>
               <div class="bottom-text">Seccade</div>
-              <a href="#" onclick="changeDiv(3);"
-                ><img
-                  src="./assets/DRcarpet4.png"
-                />
-              </a>
             </div>
             <div class="grid-item">
+              <a href="#" onclick="changeDiv(5);">
+                <img src="./assets/DRcarpet6.png" alt="Çuval" />
+              </a>
               <div class="bottom-text">Çuval</div>
-              <a href="#" onclick="changeDiv(5);"
-                ><img
-                  src="./assets/DRcarpet6.png"
-                />
-              </a>
             </div>
             <div class="grid-item">
-              <div class="bottom-text">Kilim(Tek Kanat/Şak)</div>
-              <a href="#" onclick="changeDiv(7);"
-                ><img
-                  src="./assets/DRcarpet8.png"
-                />
+              <a href="#" onclick="changeDiv(7);">
+                <img src="./assets/DRcarpet8.png" alt="Kilim (Tek Kanat/Şak)" />
               </a>
+              <div class="bottom-text">Kilim (Tek Kanat/Şak)</div>
             </div>
             <div class="grid-item">
+              <a href="#" onclick="changeDiv(9);">
+                <img src="./assets/DRcarpet10.png" alt="Yastık Kılıfı" />
+              </a>
               <div class="bottom-text">Yastık Kılıfı</div>
-              <a href="#" onclick="changeDiv(9);"
-                ><img
-                  src="./assets/DRcarpet10.png"
-                />
-              </a>
             </div>
           </div>
+
         </div>
-      </div>
+      </div><!-- /bolum1 -->
+
+      <!-- SECTION 2 — DETAIL -->
       <div id="bol2" class="bolum2">
+
         <model-viewer
           style="display: none"
           id="modelViewer"
@@ -139,6 +133,7 @@
           </button>
           <div id="ar-prompt"></div>
         </model-viewer>
+
         <script type="module" src="arScript.js"></script>
         <script src="script.js"></script>
         <script
@@ -146,50 +141,58 @@
           src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
         ></script>
 
+        <!-- Back -->
         <a href="#" class="back-button" onclick="changeDivBack();">
           <iconify-icon
             icon="ion:chevron-back-outline"
             style="color: white; margin-right: 2.3px"
-            height="30"
-            width="30"
-          ></iconify-icon
-        ></a>
+            height="22"
+            width="22"
+          ></iconify-icon>
+        </a>
+
+        <!-- Image / zoom -->
         <span class="zoom" id="ex2">
           <img id="infoImage" />
         </span>
+
+        <!-- Title -->
         <div class="head">
           <h4 id="isim"></h4>
           <div class="divider-line"></div>
         </div>
+
+        <!-- Metadata -->
         <div class="details">
-          <table style="width: 100%">
+          <table>
             <tr>
-              <td class="maddeler">Envanter No:</td>
+              <td class="maddeler">Envanter No</td>
               <td id="envanter"></td>
             </tr>
             <tr>
-              <td class="maddeler">Teknik:</td>
+              <td class="maddeler">Teknik</td>
               <td id="teknik"></td>
             </tr>
             <tr>
-              <td class="maddeler">Malzeme:</td>
+              <td class="maddeler">Malzeme</td>
               <td id="malzeme"></td>
             </tr>
             <tr>
-              <td class="maddeler">Ebat:</td>
+              <td class="maddeler">Ebat</td>
               <td id="ebat"></td>
             </tr>
-
             <tr>
-              <td class="maddeler">Gelisi:</td>
+              <td class="maddeler">Gelişi</td>
               <td id="gelis"></td>
             </tr>
             <tr>
-              <td class="maddeler">Donemi:</td>
+              <td class="maddeler">Dönemi</td>
               <td id="donem"></td>
             </tr>
           </table>
-        </div>        
+        </div>
+
+        <!-- AR Button -->
         <div class="buttonHolderContainer">
           <div class="buttonHolder">
             <div class="divider-line"></div>
@@ -203,16 +206,16 @@
             </button>
           </div>
         </div>
+
+        <!-- Overlay -->
         <div id="overlay" style="display: none" class="overlay">
           <div id="loadingRing" style="display: none" class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div></div><div></div><div></div><div></div>
           </div>
         </div>
-      </div>
-    </div>
+
+      </div><!-- /bolum2 -->
+    </div><!-- /content -->
+
   </body>
 </html>
-
